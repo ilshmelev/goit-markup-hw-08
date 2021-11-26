@@ -2,20 +2,31 @@
 body {
   background-color: #fff;
   color: #212121;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 ul {
   list-style: none;
 }
 
+/* logo */
 .logo {
   color: #000000;
+  font-family: Raleway, cursive;
+  font-size: 26px;
+  line-height: 1.19px;
 }
 
 /* site-nav */
 
 .site-nav .link {
   color: #212121;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -24,6 +35,11 @@ ul {
 
 .auth-nav .link {
   color: #757575;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
@@ -36,12 +52,27 @@ ul {
 }
 .hero-title {
   color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 136%;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 /* section */
 
+.section-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+}
+
 .section-list {
   color: #757575;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.18px;
 }
 
 /* team */
