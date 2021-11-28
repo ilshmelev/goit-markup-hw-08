@@ -13,7 +13,7 @@ ul {
 /* logo */
 .logo {
   color: #000000;
-  font-family: Raleway, cursive;
+  font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
@@ -51,6 +51,15 @@ ul {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: #2196f3;
+}
+
+.link-current {
+  color: #2196f3;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 /* hero */
@@ -118,6 +127,13 @@ ul {
 .batton {
   color: #ffffff;
   background-color: #2196f3;
+  cursor: pointer;
+}
+
+.batton:hover,
+.batton:focus {
+  color: #ffffff;
+  background-color: #188ce8;
 }
 
 /* footer */
@@ -126,7 +142,7 @@ ul {
 }
 .footer-logo {
   color: #2196f3;
-  font-family: Raleway, cursive;
+  font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
@@ -150,4 +166,29 @@ ul {
 
 .footer-colortext {
   color: #ffffff;
+}
+
+/* portfolio  batton*/
+.batton-second {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.site-nav .batton-second:hover,
+.site-nav .batton-second:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-list {
+  color: #757575;
+  font-size: 16px;
+  line-height: 1.87;
 }
