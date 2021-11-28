@@ -116,5 +116,32 @@ ul {
   background-color: #2196f3;
 }
 
-/* batton */
-footer
+/* footer */
+.footer {
+  background-color: #2f303a;
+}
+.footer-logo {
+  color: #2196f3;
+  font-family: Raleway, cursive;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.address {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.footer .link {
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.71;
+color: rgba(255, 255, 255, 0.6);
+text-decoration: none;
+
+
+
