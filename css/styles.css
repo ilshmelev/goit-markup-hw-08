@@ -19,6 +19,10 @@ ul {
   text-decoration: none;
 }
 
+.logo-colortext {
+  color: #2196f3;
+}
+
 /* site-nav */
 
 .site-nav .link {
@@ -136,12 +140,14 @@ ul {
 }
 
 .footer .link {
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 1.71;
-color: rgba(255, 255, 255, 0.6);
-text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
 
-
-
+.footer-colortext {
+  color: #ffffff;
+}
