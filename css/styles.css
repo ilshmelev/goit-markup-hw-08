@@ -176,8 +176,15 @@ ul {
 
 /* portfolio  batton*/
 .batton-second {
-  background-color: #ffffff;
+  background-color: #f5f4fa;
+
   cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .site-nav .batton-second:hover,
