@@ -4,6 +4,9 @@
   --blue-color: #2196f3;
 }
 
+/* 1170
+30 */
+
 /* body */
 body {
   background-color: #fff;
@@ -134,6 +137,13 @@ ul {
   color: #ffffff;
   background-color: var(--blue-color);
   cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: transparent;
+
+  display: inline-block;
+  padding: 10px 32px;
 }
 
 .batton:hover,
