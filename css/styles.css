@@ -4,9 +4,6 @@
   --blue-color: #2196f3;
 }
 
-/* 1170
-30 */
-
 /* body */
 body {
   width: 1200px;
@@ -81,12 +78,14 @@ ul {
 .hero {
   background-color: #2f303a;
   text-transform: uppercase;
+  text-align: center;
 }
 .hero-title {
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  padding-top: 200px;
 
   color: #ffffff;
   font-weight: 900;
@@ -103,6 +102,9 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .section-list {
@@ -155,6 +157,8 @@ ul {
 
   display: inline-block;
   padding: 10px 32px;
+
+  margin-bottom: 200px;
 }
 
 .batton:hover,
