@@ -146,6 +146,9 @@ img {
 
 .peculiarities {
   display: flex;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 107px 215px 94px 215px;
 }
 
@@ -158,6 +161,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  justify-content: space-between;
 
   margin-top: 0px;
   margin-bottom: 10px;
@@ -165,7 +169,7 @@ img {
 
 .section-list {
   color: var(--secondary-text-color);
-
+  justify-content: space-between;
   font-size: 14px;
   line-height: 1.7;
 }
@@ -273,6 +277,48 @@ img {
   color: #ffffff;
   background-color: var(--blue-color);
 }
+
+/* What are we doing */
+
+.doing-title {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 50px;
+
+  text-align: center;
+}
+
+.doing-site {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  display: flex;
+}
+
+.doing-pic {
+  margin-right: 30px;
+  margin-bottom: 94px;
+}
+
+.doing-pic:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.doing-item:last-child {
+  margin-right: 0px;
+}
+
+.doing-item {
+  margin: 0;
+}
+
+/* .doing-pic:last-child {
+  margin-left: 0;
+} */
+
+/* <!--Portfolio--> */
 
 .portfolio-net {
   width: 1200px;
