@@ -306,16 +306,12 @@ img {
   margin-right: 0px;
 }
 
-.doing-item:last-child {
+.doing-pic:not(:nth-last-child(-n + 3)) {
   margin-right: 0px;
 }
 
-.doing-item {
-  margin: 0;
-}
-
-/* .doing-pic:last-child {
-  margin-left: 0;
+/* .doing-pic:not(:nth-child(3)) {
+  margin-right: 0px;
 } */
 
 /* <!--Portfolio--> */
