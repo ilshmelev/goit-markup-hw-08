@@ -6,10 +6,6 @@
 
 /* body */
 body {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-
   background-color: #fff;
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
@@ -40,31 +36,40 @@ img {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-  display: flex;
+
   margin: auto;
 }
 
 .logo-colortext {
   color: var(--blue-color);
+}
+
+.top-line {
   display: flex;
+}
+
+/* CONTAINER */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* site-nav */
 
 .main-nav {
-  display: flex;
 }
 
 .site-nav {
-  display: flex;
   margin-left: 93px;
   margin-right: 331px;
 }
 
 .main-nav-heder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .site-nav .item {
@@ -76,7 +81,6 @@ img {
 }
 
 .site-nav .link {
-  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
@@ -92,8 +96,6 @@ img {
   color: var(--blue-color);
 }
 .auth-nav {
-  display: flex;
-  margin-left: auto;
 }
 
 .auth-nav .item + .item {
