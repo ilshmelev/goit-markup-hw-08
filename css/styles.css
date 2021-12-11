@@ -36,12 +36,20 @@ img {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-
+  margin-bottom: 12px;
   margin-top: 24px;
 }
 
 .logo-colortext {
   color: var(--blue-color);
+}
+
+.auth-nav .phone {
+  white-space: nowrap;
+}
+
+.auth-nav .mail {
+  margin-right: 50px;
 }
 
 /* CONTAINER */
@@ -68,13 +76,13 @@ img {
 
 .site-nav {
   margin-left: 93px;
-  margin-right: 331px;
   margin-top: 32px;
   display: flex;
 }
 
 .main-nav-heder {
   display: flex;
+  justify-content: space-between;
 }
 
 .site-nav .item {
