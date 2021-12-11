@@ -37,15 +37,11 @@ img {
   line-height: 1.19;
   text-decoration: none;
 
-  margin: auto;
+  margin-top: 24px;
 }
 
 .logo-colortext {
   color: var(--blue-color);
-}
-
-.top-line {
-  display: flex;
 }
 
 /* CONTAINER */
@@ -62,14 +58,23 @@ img {
 /* site-nav */
 
 .main-nav {
+  display: flex;
+}
+
+.auth-nav {
+  display: flex;
+  margin-top: 32px;
 }
 
 .site-nav {
   margin-left: 93px;
   margin-right: 331px;
+  margin-top: 32px;
+  display: flex;
 }
 
 .main-nav-heder {
+  display: flex;
 }
 
 .site-nav .item {
@@ -94,12 +99,6 @@ img {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--blue-color);
-}
-.auth-nav {
-}
-
-.auth-nav .item + .item {
-  margin-left: 50px;
 }
 
 .auth-nav .item + .item .auth-nav .link {
