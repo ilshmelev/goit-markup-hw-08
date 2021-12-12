@@ -136,19 +136,17 @@ img {
   background-color: #2f303a;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 107px;
 }
 .hero-title {
-  /* outline: 2px solid red; */
-
-  margin: 0px 452px 15px 452px;
-  padding: 200px 0px 0px 0px;
-
+  padding-top: 213px;
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
+  margin-bottom: 15px;
 }
 
 /* section */
@@ -161,10 +159,6 @@ img {
 
 .peculiarities {
   display: flex;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 107px 215px 94px 215px;
 }
 
 .peculiarities-item {
@@ -190,6 +184,7 @@ img {
   justify-content: space-between;
   font-size: 14px;
   line-height: 1.7;
+  margin-bottom: 94px;
 }
 
 /* What are we doing */
@@ -210,6 +205,7 @@ img {
 .team-list {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -234,15 +230,15 @@ img {
   text-align: center;
 }
 
-.team-list {
+.team-list-profession {
   margin-top: 10px;
   color: #757575;
   font-size: 16px;
   line-height: 1.18;
   margin-top: 30px;
-  margin-bottom: 30px;
-  justify-content: space-between;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
 }
 
 /* batton */
@@ -277,6 +273,9 @@ img {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  display: block;
+  padding-top: 94px;
+  margin-bottom: 20px;
 }
 
 .address {
@@ -284,6 +283,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+  margin-bottom: 9px;
 }
 
 .footer .link {
@@ -293,6 +293,12 @@ img {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  margin-bottom: 9px;
+  display: block;
+}
+
+.telephone {
+  padding-bottom: 60px;
 }
 
 .footer-colortext {
@@ -361,6 +367,10 @@ img {
 
 /* <!--Portfolio--> */
 
+.site-nav {
+  justify-content: center;
+}
+
 .portfolio-net {
   width: 1200px;
   padding-left: 15px;
@@ -399,4 +409,9 @@ img {
   font-size: 16px;
   line-height: 1.87;
   margin: 0px 24px 20px 24px;
+}
+
+.portfolio-project {
+  margin-right: 8px;
+  justify-content: center;
 }
