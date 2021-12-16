@@ -52,6 +52,23 @@ img {
   margin-right: 50px;
 }
 
+.auth-nav .item .mail {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.auth-nav .item .link {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
 /* CONTAINER */
 
 .container {
@@ -137,6 +154,8 @@ img {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 107px;
+}
+.hero-section {
 }
 .hero-title {
   padding-top: 213px;
@@ -250,10 +269,12 @@ img {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: transparent;
-
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
   display: inline-block;
   padding: 10px 32px;
-
   margin-bottom: 200px;
 }
 
