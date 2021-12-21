@@ -154,26 +154,24 @@ img {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 107px;
+  padding-top: 213px;
 }
 .hero-section {
 }
 .hero-title {
-  padding-top: 213px;
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
-  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 /* section */
 
 .section-peculiarities {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin-bottom: 94px;
 }
 
 .peculiarities {
@@ -203,17 +201,9 @@ img {
   justify-content: space-between;
   font-size: 14px;
   line-height: 1.7;
-  margin-bottom: 94px;
 }
 
 /* What are we doing */
-
-.doing .title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-}
 
 /* team */
 
@@ -254,7 +244,6 @@ img {
   color: #757575;
   font-size: 16px;
   line-height: 1.18;
-  margin-top: 30px;
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
@@ -287,6 +276,7 @@ img {
 /* footer */
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
 }
 .footer-logo {
   color: var(--blue-color);
@@ -295,7 +285,6 @@ img {
   line-height: 1.19;
   text-decoration: none;
   display: block;
-  padding-top: 94px;
   margin-bottom: 20px;
 }
 
@@ -328,8 +317,6 @@ img {
 
 /* portfolio  batton*/
 .batton-second {
-  background-color: #f5f4fa;
-
   cursor: pointer;
 
   font-weight: 500;
@@ -348,28 +335,25 @@ img {
 /* What are we doing */
 
 .doing {
-  width: 1200px;
+  /* width: 1200px;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 15px; */
+  margin-bottom: 94px;
 }
 
 .doing-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
   margin-bottom: 50px;
-
   text-align: center;
 }
 
 .doing-site {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-
   display: flex;
 }
-
 .doing-pic {
   margin-right: 30px;
-  margin-bottom: 94px;
 }
 
 .doing-pic:nth-child(3n) {
@@ -394,9 +378,6 @@ img {
 
 .portfolio-net {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 34px 215px 94px 34px;
 }
 
 .portfolio-net {
@@ -407,6 +388,7 @@ img {
 .portfolio-item {
   margin-right: 30px;
   margin-bottom: 30px;
+  border: 1px solid #eeeeee;
 }
 
 .portfolio-item:nth-child(3n) {
