@@ -99,7 +99,6 @@ img {
 
 .site-nav {
   margin-left: 93px;
-  margin-top: 32px;
   display: flex;
 }
 
@@ -126,6 +125,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: block;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -159,7 +159,7 @@ img {
   background-color: #2f303a;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 107px;
+  padding-bottom: 187px;
   padding-top: 213px;
 }
 
@@ -176,18 +176,17 @@ img {
 /* section */
 
 .section-peculiarities {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
+  padding-top: 107px;
 }
 
 .peculiarities {
   display: flex;
+  justify-content: space-between;
 }
 
 .peculiarities-item {
   width: 270px;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .section-title {
@@ -269,7 +268,6 @@ img {
   line-height: 1.87;
   display: inline-block;
   padding: 10px 32px;
-  margin-bottom: 200px;
 }
 
 .batton:hover,
