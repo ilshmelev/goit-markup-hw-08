@@ -69,6 +69,10 @@ img {
   text-decoration: none;
 }
 
+.site-nav .item .link.is-active {
+  color: #2196f3;
+}
+
 .horizontal-line {
   width: 1200px;
   margin: 0px;
