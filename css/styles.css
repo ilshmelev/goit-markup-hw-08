@@ -355,13 +355,6 @@ img {
 
 /* What are we doing */
 
-.doing {
-  /* width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px; */
-  margin-bottom: 94px;
-}
-
 .doing-title {
   font-weight: 700;
   font-size: 36px;
@@ -375,6 +368,7 @@ img {
 }
 .doing-pic {
   margin-right: 30px;
+  margin-bottom: 94px;
 }
 
 .doing-pic:nth-child(3n) {
