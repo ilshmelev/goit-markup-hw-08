@@ -147,6 +147,11 @@ img {
   color: var(--blue-color);
 }
 
+.auth-nav .mail:hover,
+.auth-nav .mail:focus {
+  color: var(--blue-color);
+}
+
 .auth-nav .item + .item .auth-nav .link {
   color: var(--secondary-text-color);
   font-weight: 500;
