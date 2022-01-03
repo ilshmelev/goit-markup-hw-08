@@ -90,6 +90,16 @@ img {
   margin-right: auto;
 }
 
+.container-header {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 24px;
+  padding-bottom: 12px;
+}
+
 .container-portfolio {
   width: 1200px;
   padding: 91px 15px 94px 15px;
@@ -109,7 +119,6 @@ img {
 
 .auth-nav {
   display: flex;
-  margin-top: 32px;
 }
 
 .site-nav {
