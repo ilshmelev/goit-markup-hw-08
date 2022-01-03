@@ -36,8 +36,6 @@ img {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-  margin-bottom: 12px;
-  margin-top: 24px;
 }
 
 .logo-colortext {
@@ -119,11 +117,13 @@ img {
 
 .auth-nav {
   display: flex;
+  align-items: center;
 }
 
 .site-nav {
   margin-left: 93px;
   display: flex;
+  align-items: center;
 }
 
 .main-nav-heder {
@@ -140,8 +140,6 @@ img {
 }
 
 .site-nav .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--primary-text-color);
 
   font-weight: 500;
