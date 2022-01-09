@@ -62,6 +62,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 .auth-nav .item .link {
   color: var(--secondary-text-color);
