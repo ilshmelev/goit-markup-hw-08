@@ -340,6 +340,35 @@ img {
   /* padding-bottom: 30px; */
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.social-link {
+  margin-right: 10px;
+}
+
+.link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  fill: var(--secondary-text-color);
+}
+
+.social-link:hover,
+.social-link:focus,
+.link-icon:hover,
+.link-icon:focus {
+  fill: #ffffff;
+  background-color: var(--blue-color);
+  border-radius: 50%;
+}
+
 /* batton */
 .batton {
   color: #ffffff;
