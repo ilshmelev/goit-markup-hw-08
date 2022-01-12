@@ -92,12 +92,13 @@ img {
   display: inline-block;
   align-items: center;
   margin-right: 10px;
+  fill: var(--secondary-text-color);
 }
 
-.auth-nav .mail .icon-envelope:hover,
-.auth-nav .mail .icon-smartphone:hover,
-.auth-nav .mail .icon-envelope:focus,
-.auth-nav .mail .icon-smartphone:focus {
+.icon-envelope:hover,
+.icon-smartphone:hover,
+.icon-envelope:focus,
+.icon-smartphone:focus {
   fill: var(--blue-color);
 }
 
@@ -260,6 +261,15 @@ img {
 
 .peculiarities-item {
   width: 270px;
+}
+
+.peculiarities-box {
+  background-color: #f5f4fa;
+  height: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-title {
