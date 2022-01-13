@@ -392,6 +392,33 @@ img {
   background-color: var(--blue-color);
 }
 
+/*  Постоянные клиенты  */
+.permanent-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.permanent-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.permanent-icon {
+  fill: rgba(175, 177, 184, 1);
+}
+
+.permanent-icon:focus,
+.permanent-icon:hover {
+  fill: var(--blue-color);
+}
+.permanent-link:hover,
+.permanent-link:focus {
+  border: 1px solid var(--blue-color);
+}
 /* footer */
 .footer {
   background-color: #2f303a;
