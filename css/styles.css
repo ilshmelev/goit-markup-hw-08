@@ -367,6 +367,7 @@ img {
 }
 
 .link-icon {
+  margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -376,7 +377,7 @@ img {
   fill: var(--secondary-text-color);
 }
 
-.social-link:hover,
+.link-icon .social-link:hover,
 .social-link:focus,
 .link-icon:hover,
 .link-icon:focus {
