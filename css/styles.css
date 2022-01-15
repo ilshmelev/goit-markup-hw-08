@@ -107,6 +107,15 @@ img {
   color: var(--blue-color);
 }
 
+.mail:hover .icon-envelope,
+.link:hover .icon-smartphone {
+  fill: var(--blue-color);
+}
+.icon-envelope:hover,
+.icon-smartphone:hover {
+  color: var(--blue-color);
+}
+
 /* CONTAINER */
 
 .container {
