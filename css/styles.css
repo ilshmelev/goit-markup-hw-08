@@ -101,20 +101,24 @@ img {
 .icon-envelope:focus,
 .icon-smartphone:focus {
   fill: var(--blue-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav .mail:hover,
 .auth-nav .mail:focus {
   color: var(--blue-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail:hover .icon-envelope,
 .link:hover .icon-smartphone {
   fill: var(--blue-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-envelope:hover,
 .icon-smartphone:hover {
   color: var(--blue-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* CONTAINER */
@@ -212,6 +216,7 @@ img {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--blue-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav .item + .item .auth-nav .link {
@@ -226,6 +231,7 @@ img {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--blue-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-current {
@@ -388,6 +394,7 @@ img {
   fill: #ffffff;
   background-color: var(--blue-color);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .doing-subject {
@@ -436,6 +443,7 @@ img {
 .batton:focus {
   color: #ffffff;
   background-color: var(--blue-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*  Постоянные клиенты  */
@@ -462,16 +470,19 @@ img {
 .permanent-icon:focus,
 .permanent-icon:hover {
   fill: var(--blue-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .permanent-link:hover,
 .permanent-link:focus {
   border: 1px solid var(--blue-color);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .permanent-link:hover .icon-permanent,
 .permanent-link:focus .icon-permanent {
   fill: var(--blue-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* portfolio  batton*/
@@ -496,12 +507,14 @@ img {
 .site-nav-portfolio .portfolio-project .batton-second:focus {
   color: #ffffff;
   background-color: var(--blue-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .portfolio-project .batton-second:hover,
 .site-nav .portfolio-project .batton-second:focus {
   color: #ffffff;
   background-color: var(--blue-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* What are we doing */
@@ -575,6 +588,7 @@ img {
 .portfolio-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-title {
@@ -674,4 +688,47 @@ img {
 .link-icon-join:focus,
 .link-icon-join:hover {
   background-color: var(--blue-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* модалка  */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 528px;
+  min-height: 581px;
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-modal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: var(--white-color);
+}
+
+.close-icon {
+  width: 11px;
+  height: 11px;
 }
