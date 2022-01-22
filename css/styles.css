@@ -30,6 +30,10 @@ img {
   display: block;
 }
 
+textarea {
+  resize: none;
+}
+
 /* подчеркивание ссылки */
 .active::after {
   display: block;
@@ -762,7 +766,11 @@ img {
   height: 11px;
 }
 
-/* аниме */
+/* Разметка форм  */
+.form {
+  width: ;
+}
+/* анимацыя */
 
 .card-slide {
   position: relative;
