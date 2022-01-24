@@ -454,7 +454,7 @@
       </div>
     </footer>
 
-                <!-- модалка -->
+    <!-- модалка -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -468,40 +468,50 @@
           </svg>
         </button>
 
-        <form class="form"  autocomplete="off"   js- >
+            <!-- Форма -->
+
+        <form class="form" autocomplete="off" js->
           <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+          <div class="form-container">
           <div class="form-field">
-          <label for="name">Имя</label>
-          <input type="text" name="name" id="name">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" />
           </div>
-            <div class="form-field">
+          <div class="form-field">
             <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel">
-            </div>
-              <div class="form-field">
-              <label for="mail">Почта</label>
-              <input type="email" name="mail" id="mail"> 
-              </div>
-              <div class="form-field">
-              <label for="comment" >Комментарий</label>
-              <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
-              </div>
-              <div role="group">
-              <input type="checkbox" name="agreement" value="agreement" id="agreement">
-              <label for="agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label> 
-              </div>
-            
-              <button type="submit">Отправить</button>
-              
+            <input type="tel" name="tel" id="tel" />
+          </div>
+          <div class="form-field">
+            <label for="mail">Почта</label>
+            <input type="email" name="mail" id="mail" />
+          </div>
+          <div class="form-field">
+            <label for="comment">Комментарий</label>
+            <textarea
+              name="comment"
+              id="comment"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          </div>
+          <div role="group" class="from-policy">
+            <input
+              class="policy-checkbox"
+              type="checkbox"
+              name="agreement"
+              value="agreement"
+              id="agreement"
+            />
+            <label class="from-checkbox" for="agreement">
+              Соглашаюсь с рассылкой и принимаю <a href="#" class="from-contract">Условия договора</a>
+            </label>
+          </div>
 
-
-
+          <button type="submit" class="form-submit">Отправить</button>
         </form>
-
       </div>
     </div>
-
-
 
     <script src="./js/modal.js"></script>
   </body>
