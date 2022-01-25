@@ -476,14 +476,23 @@
           <div class="form-field">
             <label for="name">Имя</label>
             <input type="text" name="name" id="name" />
+            <svg class="form-icon" width="12" height="12">
+              <use href="./images/sprite.svg#icon-person"></use>
+            </svg>
           </div>
           <div class="form-field">
             <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" />
+            <input type="tel" name="tel" id="tel" pattern="[0-9]{10}" />
+          <svg class="form-icon" width="13" height="13">
+            <use href="./images/sprite.svg#icon-email"></use>
+          </svg>
           </div>
           <div class="form-field">
             <label for="mail">Почта</label>
             <input type="email" name="mail" id="mail" />
+            <svg class="form-icon" width="15" height="12">
+              <use href="./images/sprite.svg#icon-phone"></use>
+            </svg>
           </div>
           <div class="form-field">
             <label for="comment">Комментарий</label>
