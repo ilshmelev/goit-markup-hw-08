@@ -795,7 +795,7 @@ textarea {
   margin-bottom: 28px;
 }
 
-.form-field > label {
+.form-name {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -806,11 +806,10 @@ textarea {
 }
 
 .form-field > input {
-  position: absolute;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
-  width: 448px;
+  position: relative;
 }
 
 .form-field > input::placeholder {
@@ -878,10 +877,9 @@ textarea {
 
 .form-icon {
   position: absolute;
-  margin: 15px 14px 15px 14px;
 }
 
-/* анимацыя */
+/* анимация */
 
 .card-slide {
   position: relative;

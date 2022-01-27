@@ -474,34 +474,43 @@
           <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
           <div class="form-container">
           <div class="form-field">
-            <label for="name">Имя</label>
-            <input type="text" name="name" id="name" />
-            <svg class="form-icon" width="12" height="12">
-              <use href="./images/sprite.svg#icon-person"></use>
-            </svg>
-          </div>
+            <label for="name" class="form-text">
+              <span class="form-text">Имя</span>
+              <input type="text" name="name" id="name" />
+              <svg class="form-icon" width="12" height="12">
+                <use href="./images/sprite.svg#icon-person"></use>
+              </svg>
+              </label>
+            </div>
+      
           <div class="form-field">
-            <label for="tel">Телефон</label>
+            <label for="tel">
+            <span class="form-text">Телефон</span>
             <input type="tel" name="tel" id="tel" pattern="[0-9]{10}" />
           <svg class="form-icon" width="13" height="13">
             <use href="./images/sprite.svg#icon-email"></use>
           </svg>
+          </label>
           </div>
           <div class="form-field">
-            <label for="mail">Почта</label>
+            <label for="mail">
+            <span class="form-text">  Почта</span>
             <input type="email" name="mail" id="mail" />
             <svg class="form-icon" width="15" height="12">
               <use href="./images/sprite.svg#icon-phone"></use>
             </svg>
+            </label>
           </div>
           <div class="form-field">
-            <label for="comment">Комментарий</label>
+            <label for="comment">
+            <span class="form-text">  Комментарий</span>
             <textarea
               name="comment"
               id="comment"
               rows="10"
               placeholder="Введите текст"
             ></textarea>
+            </label>
           </div>
           </div>
           <div role="group" class="from-policy">
