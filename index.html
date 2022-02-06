@@ -470,13 +470,18 @@
 
         <!-- Форма -->
 
-        <form class="form" autocomplete="off" js->
+        <form actione="#" class="form" autocomplete="off" js->
           <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
           <div class="form-box">
             <label for="name" class="form-field">
               <p class="form-text">Имя</p>
               <span class="form-container">
-                <input type="text" name="name" id="name" />
+                <input
+                  class="modal-form-input"
+                  type="text"
+                  name="name"
+                  id="name"
+                />
                 <svg class="form-icon" width="18" height="18">
                   <use href="./images/sprite.svg#icon-person"></use>
                 </svg>
@@ -486,18 +491,29 @@
             <label for="tel" class="form-field">
               <p class="form-text">Телефон</p>
               <span class="form-container">
-                <input type="tel" name="tel" id="tel" pattern="[0-9]{10}" />
+                <input
+                  class="modal-form-input"
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  pattern="[0-9]{10}"
+                />
                 <svg class="form-icon" width="18" height="18">
-                  <use href="./images/sprite.svg#icon-email"></use>
+                  <use href="./images/sprite.svg#icon-phone"></use>
                 </svg>
               </span>
             </label>
             <label for="mail" class="form-field">
               <p class="form-text">Почта</p>
               <span class="form-container">
-                <input type="email" name="mail" id="mail" />
+                <input
+                  class="modal-form-input"
+                  type="email"
+                  name="mail"
+                  id="mail"
+                />
                 <svg class="form-icon" width="18" height="18">
-                  <use href="./images/sprite.svg#icon-phone"></use>
+                  <use href="./images/sprite.svg#icon-email"></use>
                 </svg>
               </span>
             </label>
@@ -509,8 +525,7 @@
                   id="comment"
                   rows="10"
                   placeholder="Введите текст"
-                >
-                </textarea>
+                ></textarea>
               </span>
             </label>
           </div>
