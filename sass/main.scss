@@ -3,8 +3,11 @@
 @import "./base/container";
 @import "./utils/visually-hidden";
 @import "./components/modal-btn";
-@import "./components/header";
+@import "./layout/header";
 @import "./components/logo";
-@import "./components/site-nav";
+@import "./layout/site-nav";
 @import "./utils/active";
-@import "./components/auth-nav";
+@import "./layout/auth-nav";
+@import "./layout/hero";
+@import "./components/button-hero";
+@import "./layout/doing";
