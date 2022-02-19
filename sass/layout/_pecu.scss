@@ -1,0 +1,41 @@
+/* ===== секция особенности =====*/
+.section-peculiarities {
+  padding-bottom: 94px;
+  padding-top: 107px;
+}
+
+.peculiarities {
+  display: flex;
+  justify-content: space-between;
+}
+
+.peculiarities-item {
+  width: 270px;
+}
+
+.peculiarities-box {
+  background-color: #f5f4fa;
+  height: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  justify-content: space-between;
+
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.section-list {
+  color: var(--secondary-text-color);
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 1.7;
+}
