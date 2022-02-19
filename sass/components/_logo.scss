@@ -1,0 +1,14 @@
+/* логотип хедера */
+.logo {
+  display: flex;
+  align-items: center;
+  color: #000000;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo-colortext {
+  color: var(--blue-color);
+}

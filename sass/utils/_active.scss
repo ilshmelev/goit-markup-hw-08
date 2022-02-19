@@ -1,0 +1,13 @@
+/* подчеркивание ссылки */
+.active::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: var(--blue-color);
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: var(--blue-color);
+}
