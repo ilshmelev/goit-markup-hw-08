@@ -23,11 +23,11 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: var(--white-color);
-}
 
-.close-modal:hover,
-.close-modal:focus {
-  fill: var(--blue-color);
+  &:hover,
+  &:focus {
+    fill: var(--blue-color);
+  }
 }
 
 .close-icon {

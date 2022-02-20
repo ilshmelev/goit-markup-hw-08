@@ -15,14 +15,14 @@
   border: none;
   cursor: pointer;
   position: relative;
-}
 
-.footer-form-button::after {
-  content: "";
-  width: 24px;
-  height: 24px;
-  background-image: url(../images/send.svg);
-  position: absolute;
-  right: 28px;
-  top: 13px;
+  &::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/send.svg);
+    position: absolute;
+    right: 28px;
+    top: 13px;
+  }
 }

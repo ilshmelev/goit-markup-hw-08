@@ -13,10 +13,10 @@
   line-height: 1.87;
   display: inline-block;
   padding: 10px 32px;
-}
 
-.button:hover,
-.button:focus {
-  color: var(--white-color);
-  background-color: var(--blue-color);
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--blue-color);
+  }
 }

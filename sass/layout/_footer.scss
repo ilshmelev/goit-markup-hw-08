@@ -3,6 +3,17 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  & .link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    margin-bottom: 9px;
+    display: block;
+  }
 }
 
 .address {
@@ -11,15 +22,4 @@
   line-height: 1.71;
   font-style: normal;
   margin-bottom: 9px;
-}
-
-.footer .link {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  margin-bottom: 9px;
-  display: block;
 }

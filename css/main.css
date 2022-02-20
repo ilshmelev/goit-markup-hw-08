@@ -37,22 +37,6 @@
   align-items: baseline;
 }
 
-.container-doing {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.container-team {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* основные стили */
 body {
   background-color: var(--white-color);
@@ -137,8 +121,7 @@ textarea {
   padding: 10px 32px;
 }
 
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   color: var(--white-color);
   background-color: var(--blue-color);
 }
@@ -163,10 +146,7 @@ textarea {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-icon .social-link:hover,
-.social-link:focus,
-.link-icon:hover,
-.link-icon:focus {
+.link-icon:hover, .link-icon:focus {
   fill: var(--white-color);
   background-color: var(--blue-color);
   border-radius: 50%;
@@ -215,8 +195,7 @@ textarea {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-icon-join:focus,
-.link-icon-join:hover {
+.link-icon-join:focus, .link-icon-join:hover {
   background-color: var(--blue-color);
 }
 
@@ -304,8 +283,7 @@ textarea {
   background-color: var(--white-color);
 }
 
-.close-modal:hover,
-.close-modal:focus {
+.close-modal:hover, .close-modal:focus {
   fill: var(--blue-color);
 }
 
@@ -483,6 +461,12 @@ textarea {
 }
 
 /* ===== навигация портфолио =====*/
+.site-nav-portfolio {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 .batton-second {
   cursor: pointer;
   font-weight: 500;
@@ -500,18 +484,6 @@ textarea {
 .site-nav-portfolio .portfolio-project .batton-second:focus {
   color: var(--white-color);
   background-color: var(--blue-color);
-}
-
-.site-nav .portfolio-project .batton-second:hover,
-.site-nav .portfolio-project .batton-second:focus {
-  color: var(--white-color);
-  background-color: var(--blue-color);
-}
-
-.site-nav-portfolio {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
 }
 
 /* ===== портфолио карточки =====*/
@@ -535,9 +507,13 @@ textarea {
   margin-right: 0;
 }
 
-.portfolio-item:focus,
-.portfolio-item:hover {
+.portfolio-item:focus, .portfolio-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-item:hover .overlay,
+.portfolio-item:focus .overlay {
+  transform: translateY(-100%);
 }
 
 .portfolio-title {
@@ -561,11 +537,6 @@ textarea {
 
 .portfolio-items {
   padding: 20px 24px 20px 24px;
-}
-
-.portfolio-item:hover .overlay,
-.portfolio-item:focus .overlay {
-  transform: translateY(-100%);
 }
 
 /* ===== кнопка в футере =====*/
@@ -650,15 +621,8 @@ header {
   margin-left: auto;
 }
 
-.auth-nav .phone {
-  white-space: nowrap;
-}
-
-.auth-nav .mail {
-  margin-right: 50px;
-}
-
 .auth-nav .item .mail {
+  margin-right: 50px;
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -682,6 +646,16 @@ header {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.auth-nav .item .mail:hover,
+.auth-nav .item .mail:focus {
+  color: var(--blue-color);
+}
+
+.auth-nav .item .link:hover,
+.auth-nav .item .link:focus {
+  color: var(--blue-color);
+}
+
 .icon-envelope,
 .icon-smartphone {
   display: inline-block;
@@ -691,41 +665,15 @@ header {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-envelope:hover,
+.icon-envelope:hover, .icon-envelope:focus,
 .icon-smartphone:hover,
-.icon-envelope:focus,
 .icon-smartphone:focus {
   fill: var(--blue-color);
-}
-
-.auth-nav .mail:hover,
-.auth-nav .mail:focus {
-  color: var(--blue-color);
 }
 
 .mail:hover .icon-envelope,
 .link:hover .icon-smartphone {
   fill: var(--blue-color);
-}
-
-.icon-envelope:hover,
-.icon-smartphone:hover {
-  color: var(--blue-color);
-}
-
-.auth-nav .item + .item .auth-nav .link {
-  color: var(--secondary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  display: inline;
-}
-
-.auth-nav .link:hover,
-.auth-nav .link:focus {
-  color: var(--blue-color);
 }
 
 /* ===== секция герой =====*/
@@ -904,6 +852,15 @@ header {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.permanent-link:hover, .permanent-link:focus {
+  border: 1px solid var(--blue-color);
+}
+
+.permanent-link:hover .icon-permanent,
+.permanent-link:focus .icon-permanent {
+  fill: var(--blue-color);
+}
+
 .permanent-icon {
   fill: #afb1b8;
   width: 100%;
@@ -913,18 +870,7 @@ header {
   justify-content: center;
 }
 
-.permanent-icon:focus,
-.permanent-icon:hover {
-  fill: var(--blue-color);
-}
-
-.permanent-link:hover,
-.permanent-link:focus {
-  border: 1px solid var(--blue-color);
-}
-
-.permanent-link:hover .icon-permanent,
-.permanent-link:focus .icon-permanent {
+.permanent-icon:focus, .permanent-icon:hover {
   fill: var(--blue-color);
 }
 
@@ -933,14 +879,6 @@ header {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.address {
-  color: var(--white-color);
-  font-size: 14px;
-  line-height: 1.71;
-  font-style: normal;
-  margin-bottom: 9px;
 }
 
 .footer .link {
@@ -952,6 +890,14 @@ header {
   text-decoration: none;
   margin-bottom: 9px;
   display: block;
+}
+
+.address {
+  color: var(--white-color);
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  margin-bottom: 9px;
 }
 
 .portfolio {
