@@ -14,6 +14,11 @@
 @import "./components/logo-footer";
 @import "./components/join";
 @import "./components/subscribe";
+@import "./components/backdrop";
+@import "./components/modal-form";
+@import "./components/site-nav-portfolio";
+@import "./components/portfolio-net";
+@import "./components/footer-button";
 
 // LAYOUT
 @import "./layout/header";
@@ -25,6 +30,8 @@
 @import "./layout/section-team";
 @import "./layout/section-peculiarities";
 @import "./layout/footer";
+@import "./layout/section-portfolio";
+@import "./layout/card-slide";
 
 // UTILS
 @import "./utils/active";

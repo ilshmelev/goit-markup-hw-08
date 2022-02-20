@@ -33,31 +33,3 @@
   outline: none;
   cursor: pointer;
 }
-
-.footer-form-button {
-  width: 200px;
-  height: 50px;
-  background: var(--blue-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  padding: 10px 62px 10px 29px;
-  letter-spacing: 0.06em;
-  color: var(--white-color);
-  border: none;
-  cursor: pointer;
-  position: relative;
-}
-
-.footer-form-button::after {
-  content: "";
-  width: 24px;
-  height: 24px;
-  background-image: url(../images/send.svg);
-  position: absolute;
-  right: 28px;
-  top: 13px;
-}
