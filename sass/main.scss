@@ -1,20 +1,30 @@
+// UTILS
 @import "./utils/variables";
-@import "./base/common";
-@import "./base/container";
 @import "./utils/visually-hidden";
+
+// BASE
+@import "./base/container";
+@import "./base/common";
+
+// COMPONENTS
 @import "./components/modal-btn";
-@import "./layout/header";
 @import "./components/logo-header";
+@import "./components/button-hero";
+@import "./components/social-links";
+@import "./components/logo-footer";
+@import "./components/join";
+@import "./components/subscribe";
+
+// LAYOUT
+@import "./layout/header";
 @import "./layout/site-nav";
-@import "./utils/active";
 @import "./layout/auth-nav";
 @import "./layout/section-hero";
-@import "./components/button-hero";
 @import "./layout/doing";
 @import "./layout/pecu";
-@import "./components/social-links";
 @import "./layout/section-team";
 @import "./layout/section-peculiarities";
-@import "./components/logo-footer";
 @import "./layout/footer";
-@import "./components/join;
+
+// UTILS
+@import "./utils/active";
