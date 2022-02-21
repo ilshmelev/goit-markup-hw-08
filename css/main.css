@@ -156,17 +156,6 @@ textarea {
   border-radius: 50%;
 }
 
-/* логотип футера  */
-.footer-logo {
-  color: var(--blue-color);
-  font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 20px;
-}
-
 /* ===== Присоединяйтесь ===== */
 .join {
   margin-left: 70px;
