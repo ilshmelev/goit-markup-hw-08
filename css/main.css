@@ -89,19 +89,23 @@ textarea {
   border-radius: 4px;
 }
 
-/* логотип хедера */
+/* логотип */
 .logo {
   display: flex;
   align-items: center;
-  color: #000000;
+  color: var(--blue-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
 }
 
-.logo-colortext {
-  color: var(--blue-color);
+.header__logo--colortext {
+  color: #000000;
+}
+
+.footer__logo--colortext {
+  color: var(--white-color);
 }
 
 /* ===== кнопка героя =====*/
@@ -161,10 +165,6 @@ textarea {
   text-decoration: none;
   display: block;
   margin-bottom: 20px;
-}
-
-.footer-colortext {
-  color: var(--white-color);
 }
 
 /* ===== Присоединяйтесь ===== */
@@ -569,13 +569,11 @@ textarea {
 }
 
 /* хедер */
-header {
-  display: flex;
-  justify-content: space-between;
+.header {
   border-bottom: 1px solid #ececec;
 }
 
-.main-nav {
+.header__main-nav {
   display: flex;
   align-items: center;
 }
@@ -898,6 +896,7 @@ header {
   line-height: 1.71;
   font-style: normal;
   margin-bottom: 9px;
+  margin-top: 20px;
 }
 
 .portfolio {
