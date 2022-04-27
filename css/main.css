@@ -87,6 +87,7 @@ textarea {
   padding: 10px 55px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 /* логотип */
@@ -418,24 +419,6 @@ textarea {
   color: var(--blue-color);
 }
 
-.form-submit {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--white-color);
-  display: flex;
-  margin: 0 auto;
-  border: transparent;
-  background-color: var(--blue-color);
-  padding: 10px 55px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
 .form-icon {
   position: absolute;
   width: 18px;
@@ -679,7 +662,7 @@ textarea {
   height: 600px;
 }
 
-.hero-title {
+.hero__title {
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
@@ -733,21 +716,21 @@ textarea {
 }
 
 /* ===== секция особенности =====*/
-.section-peculiarities {
+.advantages {
   padding-bottom: 94px;
   padding-top: 107px;
 }
 
-.peculiarities {
+.advantages__list {
   display: flex;
   justify-content: space-between;
 }
 
-.peculiarities-item {
+.advantages__item {
   width: 270px;
 }
 
-.peculiarities-box {
+.advantages__box {
   background-color: #f5f4fa;
   height: 120px;
   margin-bottom: 30px;
@@ -756,7 +739,7 @@ textarea {
   justify-content: center;
 }
 
-.section-title {
+.advantages__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -766,7 +749,7 @@ textarea {
   margin-bottom: 10px;
 }
 
-.section-list {
+.advantages__text {
   color: var(--secondary-text-color);
   justify-content: space-between;
   font-size: 14px;
@@ -821,6 +804,11 @@ textarea {
 }
 
 /* ===== секция постоянные клиенты =====*/
+.section-peculiarities {
+  padding-bottom: 94px;
+  padding-top: 107px;
+}
+
 .permanent-links {
   display: flex;
   justify-content: space-between;
