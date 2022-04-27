@@ -70,7 +70,7 @@ textarea {
   resize: none;
 }
 
-/* модалка */
+/* модалка кнопка */
 .form-submit {
   font-style: normal;
   font-weight: bold;
@@ -282,19 +282,6 @@ textarea {
   height: 11px;
 }
 
-.form-title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.form-box {
-  margin-top: 12px;
-}
-
 .form {
   width: 448px;
   margin-left: auto;
@@ -303,13 +290,26 @@ textarea {
   padding-bottom: 40px;
 }
 
-.form-field {
+.form__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.form__box {
+  margin-top: 12px;
+}
+
+.form__field {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.form-text {
+.form__text {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -319,7 +319,7 @@ textarea {
   color: var(--secondary-text-color);
 }
 
-.form-container > input {
+.form__container > input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
@@ -328,22 +328,21 @@ textarea {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input:focus,
-.modal-form-input:hover {
+.form__input:focus, .form__input:hover {
   outline: none;
   border-color: var(--blue-color);
 }
 
-.modal-form-input:focus + .form-icon,
-.modal-form-input:hover + .form-icon {
+.form__input:focus + .form__icon,
+.form__input:hover + .form__icon {
   fill: var(--blue-color);
 }
 
-.form-container {
+.form__container {
   position: relative;
 }
 
-.form-container > textarea::placeholder {
+.form__container > textarea::placeholder {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -352,7 +351,7 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-container > textarea {
+.form__container > textarea {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -366,10 +365,23 @@ textarea {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-container > textarea:focus,
-.form-container > textarea:hover {
+.form__container > textarea:focus,
+.form__container > textarea:hover {
   outline: none;
   border-color: var(--blue-color);
+}
+
+.form__icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .from-policy {
@@ -378,7 +390,7 @@ textarea {
   margin-bottom: 30px;
 }
 
-.from-checkbox {
+.from-policy__checkbox {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -391,7 +403,7 @@ textarea {
   align-items: center;
 }
 
-.from-checkbox::before {
+.from-policy__checkbox::before {
   display: block;
   content: "";
   width: 16px;
@@ -402,7 +414,7 @@ textarea {
   margin-right: 8px;
 }
 
-.policy-checkbox:checked + .from-checkbox::before {
+.policy-checkbox:checked + .from-policy__checkbox::before {
   background-color: var(--blue-color);
   border-color: var(--blue-color);
   background-image: url("../images/full-check.svg");
@@ -410,26 +422,13 @@ textarea {
   background-position: 50% 50%;
 }
 
-.policy-checkbox:focus + .from-checkbox::before,
-.policy-checkbox:hover + .from-checkbox::before {
+.policy-checkbox:focus + .from-policy__checkbox::before,
+.policy-checkbox:hover + .from-policy__checkbox::before {
   border-color: var(--blue-color);
 }
 
-.from-contract {
+.from-policy__contract {
   color: var(--blue-color);
-}
-
-.form-icon {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(-50%);
-  top: 50%;
-  left: 12px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ===== навигация портфолио =====*/
@@ -673,11 +672,11 @@ textarea {
 }
 
 /* ===== секция чем мы занимаемся =====*/
-.doing {
+.services {
   padding-bottom: 94px;
 }
 
-.doing-title {
+.services__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -685,12 +684,16 @@ textarea {
   text-align: center;
 }
 
-.doing-site {
+.services__list {
   display: flex;
   justify-content: space-between;
 }
 
-.doing-subject {
+.competence {
+  position: relative;
+}
+
+.competence__subject {
   text-transform: uppercase;
   font-style: normal;
   font-weight: bold;
@@ -709,10 +712,6 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.competence {
-  position: relative;
 }
 
 /* ===== секция особенности =====*/
@@ -763,12 +762,7 @@ textarea {
   padding-bottom: 94px;
 }
 
-.team-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.team-title {
+.team-section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -776,13 +770,18 @@ textarea {
   margin-bottom: 50px;
 }
 
-.team-item {
+.team-section__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-section__item {
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-name {
+.team-section__worker-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -790,7 +789,7 @@ textarea {
   text-align: center;
 }
 
-.team-list-profession {
+.team-section__position {
   margin-top: 10px;
   color: #757575;
   font-size: 16px;
@@ -804,17 +803,25 @@ textarea {
 }
 
 /* ===== секция постоянные клиенты =====*/
-.section-peculiarities {
+.section-clients {
   padding-bottom: 94px;
   padding-top: 107px;
 }
 
-.permanent-links {
+.section-clients__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.permanent-clients-list {
   display: flex;
   justify-content: space-between;
 }
 
-.permanent-link {
+.permanent-clients-list__item {
   fill: var(--secondary-text-color);
   width: 170px;
   height: 92px;
@@ -827,16 +834,16 @@ textarea {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.permanent-link:hover, .permanent-link:focus {
+.permanent-clients-list__item:hover, .permanent-clients-list__item:focus {
   border: 1px solid var(--blue-color);
 }
 
-.permanent-link:hover .icon-permanent,
-.permanent-link:focus .icon-permanent {
+.permanent-clients-list__item:hover .icon-permanent,
+.permanent-clients-list__item:focus .icon-permanent {
   fill: var(--blue-color);
 }
 
-.permanent-icon {
+.permanent-clients-list__icon {
   fill: #afb1b8;
   width: 100%;
   height: 100%;
@@ -845,7 +852,7 @@ textarea {
   justify-content: center;
 }
 
-.permanent-icon:focus, .permanent-icon:hover {
+.permanent-clients-list__icon:focus, .permanent-clients-list__icon:hover {
   fill: var(--blue-color);
 }
 
