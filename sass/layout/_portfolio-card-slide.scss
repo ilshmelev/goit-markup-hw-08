@@ -1,12 +1,12 @@
 /* анимация карточек */
-.card-slide {
+.portfolio__card-slide {
   position: relative;
   overflow: hidden;
 }
 
 .overlay {
   width: 100%;
-  height: 100%;
+  
   background: rgba(33, 150, 243, 0.9);
   color: var(--white-color);
   padding: 63px 24px;

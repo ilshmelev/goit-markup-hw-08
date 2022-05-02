@@ -1,12 +1,12 @@
 /* ===== портфолио карточки =====*/
 
-.portfolio-net {
+.portfolio__cards {
   width: 1200px;
   display: flex;
   flex-wrap: wrap;
 }
 
-.portfolio-item {
+.portfolio__card-elment {
   margin-right: 30px;
   border: 1px solid #eeeeee;
   cursor: pointer;
@@ -30,7 +30,7 @@
   }
 }
 
-.portfolio-title {
+.portfolio__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -38,17 +38,14 @@
   margin-bottom: 4px;
 }
 
-.portfolio-list {
+.portfolio__list {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.87;
 }
 
-.portfolio-project {
-  margin-right: 8px;
-  justify-content: center;
-}
 
-.portfolio-items {
+
+.portfolio__card-text {
   padding: 20px 24px 20px 24px;
 }

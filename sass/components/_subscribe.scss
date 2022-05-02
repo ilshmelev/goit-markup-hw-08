@@ -1,17 +1,19 @@
 /* ===== Подпишитесь на рассылку =====*/
 .subscribe {
   margin-left: 93px;
+
+  &__title {
+    margin-bottom: 20px;
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
 }
 
-.join-text {
-  margin-bottom: 20px;
-  color: var(--white-color);
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
+
 
 .footer-form-input {
   background-color: #2f303a;
