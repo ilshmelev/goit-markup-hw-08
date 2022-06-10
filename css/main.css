@@ -211,6 +211,7 @@ textarea {
 }
 
 .footer-form-input {
+  margin-right: 12px;
   background-color: #2f303a;
   font-style: normal;
   font-weight: normal;
@@ -804,49 +805,91 @@ textarea {
 }
 
 /* ===== секция постоянные клиенты =====*/
-.section-clients {
+.section {
+  padding-top: 94px;
   padding-bottom: 94px;
-  padding-top: 107px;
+  margin: auto;
 }
 
-.section-clients__title {
+.clients {
+  margin: 0px 0px 50px 0px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  margin-bottom: 50px;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
-.permanent-clients-list {
+.clients-ul {
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
-.permanent-clients-list__item {
+.list {
+  list-style: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.clients-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  outline: transparent;
+  transition-property: color, border, border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  color: var(--secondary-text-color);
-  transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.permanent-clients-list__item:hover, .permanent-clients-list__item:focus {
-  border: 1px solid var(--blue-color);
-}
-
-.permanent-clients-list .icon-permanent {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
-  transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.permanent-clients-list .icon-permanent:focus, .permanent-clients-list .icon-permanent:hover {
+.clients-a:focus {
+  border-color: var(--blue-color);
+  border-radius: 4px;
+}
+
+.clients-a:hover {
+  border-color: var(--blue-color);
+  border-radius: 4px;
+}
+
+.clients-a:focus .clients-logo {
+  fill: var(--blue-color);
+}
+
+.clients-a:hover .clients-logo {
   fill: var(--blue-color);
 }
 
