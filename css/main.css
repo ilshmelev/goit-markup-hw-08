@@ -560,7 +560,6 @@ textarea {
 
 .site-nav .item {
   margin-right: 50px;
-  padding: 32px 0px;
   position: relative;
 }
 
@@ -569,6 +568,7 @@ textarea {
 }
 
 .site-nav .link {
+  padding: 32px 0px;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -823,7 +823,6 @@ textarea {
 }
 
 .permanent-clients-list__item {
-  fill: var(--secondary-text-color);
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -832,28 +831,22 @@ textarea {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--secondary-text-color);
+  transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .permanent-clients-list__item:hover, .permanent-clients-list__item:focus {
   border: 1px solid var(--blue-color);
 }
 
-.permanent-clients-list__item:hover .icon-permanent,
-.permanent-clients-list__item:focus .icon-permanent {
-  fill: var(--blue-color);
-}
-
-.permanent-clients-list__icon {
+.permanent-clients-list .icon-permanent {
+  width: 106px;
+  height: 60px;
   fill: #afb1b8;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.permanent-clients-list__icon:focus, .permanent-clients-list__icon:hover {
+.permanent-clients-list .icon-permanent:focus, .permanent-clients-list .icon-permanent:hover {
   fill: var(--blue-color);
 }
 
@@ -862,6 +855,15 @@ textarea {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer__address {
+  color: var(--white-color);
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  margin-bottom: 9px;
+  margin-top: 20px;
 }
 
 .footer .link {
@@ -873,15 +875,6 @@ textarea {
   text-decoration: none;
   margin-bottom: 9px;
   display: block;
-}
-
-.address {
-  color: var(--white-color);
-  font-size: 14px;
-  line-height: 1.71;
-  font-style: normal;
-  margin-bottom: 9px;
-  margin-top: 20px;
 }
 
 /* ===== внутренние отступы портфолио =====*/
