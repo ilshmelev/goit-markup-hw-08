@@ -346,48 +346,48 @@
 
       <!-- Постоянные клиенты -->
 
-      <section class="section">
+      <section class="clients-section">
         <div class="container">
-          <h2 class="clients">Постоянные клиенты</h2>
-          <ul class="clients-ul list">
-            <li class="clients-li link">
-              <a href="#" class="clients-a">
-                <svg class="clients-logo" width="106" height="60">
+          <h2 class="clients-section__title">Постоянные клиенты</h2>
+          <ul class="clients-section__list">
+            <li class="clients-section__item">
+              <a href="#" class="clients-section__link">
+                <svg class="clients-section__logo" width="106" height="60">
                   <use href="images/sprite.svg#icon-group1"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-li link">
-              <a href="#" class="clients-a">
-                <svg class="clients-logo" width="106" height="60">
+            <li class="clients-section__item">
+              <a href="#" class="clients-section__link">
+                <svg class="clients-section__logo" width="106" height="60">
                   <use href="images/sprite.svg#icon-group2"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-li link">
-              <a href="#" class="clients-a">
-                <svg class="clients-logo" width="106" height="60">
+            <li class="clients-section__item">
+              <a href="#" class="clients-section__link">
+                <svg class="clients-section__logo" width="106" height="60">
                   <use href="images/sprite.svg#icon-group3"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-li link">
-              <a href="#" class="clients-a">
-                <svg class="clients-logo" width="106" height="60">
+            <li class="clients-section__item">
+              <a href="#" class="clients-section__link">
+                <svg class="clients-section__logo" width="106" height="60">
                   <use href="images/sprite.svg#icon-group4"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-li link">
-              <a href="#" class="clients-a">
-                <svg class="clients-logo" width="106" height="60">
+            <li class="clients-section__item">
+              <a href="#" class="clients-section__link">
+                <svg class="clients-section__logo" width="106" height="60">
                   <use href="images/sprite.svg#icon-group5"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-li link">
-              <a href="#" class="clients-a">
-                <svg class="clients-logo" width="106" height="60">
+            <li class="clients-section__item">
+              <a href="#" class="clients-section__link">
+                <svg class="clients-section__logo" width="106" height="60">
                   <use href="images/sprite.svg#icon-group6"></use>
                 </svg>
               </a>
@@ -395,81 +395,36 @@
           </ul>
         </div>
       </section>
-
-      <!-- <section class="section-clients container">
-        <h2 class="section-clients__title">Постоянные клиенты</h2>
-        <ul class="permanent-clients-list">
-          <li class="permanent-clients-list__item">
-            <a href="#">
-              <svg class="icon-permanent">
-                <use href="images/sprite.svg#icon-group1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="permanent-clients-list__item">
-            <a href="#">
-              <svg class="icon-permanent">
-                <use href="images/sprite.svg#icon-group2"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="permanent-clients-list__item">
-            <a href="#">
-              <svg class="icon-permanent">
-                <use href="images/sprite.svg#icon-group3"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="permanent-clients-list__item">
-            <a href="#">
-              <svg class="icon-permanent">
-                <use href="images/sprite.svg#icon-group4"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="permanent-clients-list__item">
-            <a href="#">
-              <svg class="icon-permanent">
-                <use href="images/sprite.svg#icon-group5"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="permanent-clients-list__item">
-            <a href="#">
-              <svg class="icon-permanent">
-                <use href="images/sprite.svg#icon-group6"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </section> -->
     </main>
 
     <!-- Футер -->
 
     <footer class="footer">
-      <div class="container-footer">
-        <div>
-          <a href="/" class="logo">
-            Web<span class="footer__logo--colortext">Studio</span>
-          </a>
-          <address>
+      <section class="footer__section container">
+        <div class="footer__main">
+          <div class="footer__logo--margin">
+            <a href="./index.html" class="logo">
+              <span class="logo__main">Web</span
+              ><span class="footer__logo--colortext">Studio</span>
+            </a>
+          </div>
+
+          <address class="footer__address-section">
             <p class="footer__address">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul>
-              <li>
-                <a href="mailto:info@example.com" class="link"
+            <ul class="footer__contacts">
+              <li class="footer__item">
+                <a href="mailto:info@example.com" class="footer__link"
                   >info@example.com</a
                 >
               </li>
-              <li>
-                <a href="tel:+380991111111" class="link telephone"
+              <li class="footer__item">
+                <a href="tel:+380991111111" class="footer__link"
                   >+38 099 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-
         <!-- Присоединяйтесь -->
 
         <div class="join">
@@ -528,7 +483,90 @@
             </button>
           </form>
         </div>
-      </div>
+      </section>
+
+      <!-- <div class="container-footer">
+        <div>
+          <a href="/" class="logo">
+            Web<span class="footer__logo--colortext">Studio</span>
+          </a>
+          <address>
+            <p class="footer__address">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul>
+              <li>
+                <a href="mailto:info@example.com" class="link"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380991111111" class="link telephone"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <! Присоединяйтесь -->
+
+      <!-- <div class="join">
+          <h3 class="join__title">присоединяйтесь</h3>
+          <ul class="join__list">
+            <li>
+              <a href="#" class="join__icon">
+                <svg width="20" height="20">
+                  <use href="images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="join__icon">
+                <svg width="20" height="20">
+                  <use href="images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="join__icon">
+                <svg width="20" height="20">
+                  <use href="images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="join__icon">
+                <svg width="20" height="20">
+                  <use href="images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div> -->
+
+      <!-- Подпишитесь на рассылку -->
+
+      <!-- <div class="subscribe">
+          <h3 class="join__title">Подпишитесь на рассылку</h3>
+          <form>
+            <label for="mail" class="">
+              <span class="">
+                <input
+                  placeholder="E-mail"
+                  class="footer-form-input"
+                  type="email"
+                  name="mail"
+                  id="mail"
+                  required
+                />
+              </span>
+            </label>
+            <button type="submit" class="footer-form-button">
+              Подписаться
+            </button>
+          </form>
+        </div>
+      </div> -->
+      -->
     </footer>
 
     <!-- модалка -->

@@ -1,11 +1,11 @@
 /* ===== секция постоянные клиенты =====*/
-.section {
+.clients-section {
   padding-top: 94px;
   padding-bottom: 94px;
   margin: auto;
 }
 
-.clients {
+.clients-section__title {
   margin: 0px 0px 50px 0px;
   font-weight: 700;
   font-size: 36px;
@@ -14,36 +14,33 @@
   letter-spacing: 0.03em;
 }
 
-.clients-ul {
+.clients-section__list {
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.list {
+  
   list-style: none;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-li:not(:last-child) {
-  margin-right: 30px;
-}
 
-.clients-li {
+
+.clients-section__item {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.link {
   text-decoration: none;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.clients-a {
+.clients-section__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +54,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-logo {
+.clients-section__logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,68 +66,20 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-a:focus {
+.clients-section__link:focus {
   border-color: var(--blue-color);
   border-radius: 4px;
 }
 
-.clients-a:hover {
+.clients-section__link:hover {
   border-color: var(--blue-color);
   border-radius: 4px;
 }
 
-.clients-a:focus .clients-logo {
+.clients-section__link:focus .clients-section__logo {
   fill: var(--blue-color);
 }
 
-.clients-a:hover .clients-logo {
+.clients-section__link:hover .clients-section__logo {
   fill: var(--blue-color);
 }
-
-// .section-clients {
-//   padding-bottom: 94px;
-//   padding-top: 107px;
-
-//   &__title {
-//     font-weight: 700;
-//     font-size: 36px;
-//     line-height: 1.16;
-//     margin-bottom: 50px;
-//     text-align: center;
-//   }
-// }
-
-// .permanent-clients-list {
-//   display: flex;
-//   justify-content: space-between;
-
-//   &__item {
-//     width: 170px;
-//     height: 92px;
-//     border: 1px solid #afb1b8;
-//     border-radius: 4px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     cursor: pointer;
-//     color: var(--secondary-text-color);
-//     transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//     &:hover,
-//     &:focus {
-//       border: 1px solid var(--blue-color);
-//     }
-
-//   }
-//     & .icon-permanent {
-//       width: 106px;
-//       height: 60px;
-//       fill: rgba(175, 177, 184, 1);
-//       transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//       &:focus,
-//       &:hover {
-//         fill: var(--blue-color);
-//       }
-//     }
-// }

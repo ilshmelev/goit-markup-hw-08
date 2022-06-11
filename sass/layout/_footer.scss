@@ -1,28 +1,49 @@
 /* ===== футер =====*/
+
 .footer {
-  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #2f303a;
+}
 
-  &__address {
-      color: var(--white-color);
-      font-size: 14px;
-      line-height: 1.71;
-      font-style: normal;
-      margin-bottom: 9px;
-      margin-top: 20px;
-    }
+.footer__section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
 
-  & .link {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
+.footer__logo--margin {
+  margin-bottom: 20px;
+}
+
+.footer__address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--white-color);
+  margin-bottom: 9px;
+}
+
+.footer__address-section {
+  margin-bottom: 60px;
+}
+
+.footer__item {
+  font-style: normal;
+  font-weight: 400;
+  &:not(:last-child) {
     margin-bottom: 9px;
-    display: block;
   }
 }
 
+.footer__item .footer__link {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
 
+.footer__link:hover,
+.footer__link:focus {
+  color: var(--blue-color);
+}
