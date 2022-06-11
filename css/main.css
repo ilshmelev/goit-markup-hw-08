@@ -643,7 +643,9 @@ textarea {
 }
 
 .mail:hover .icon-envelope,
-.link:hover .icon-smartphone {
+.link:hover .icon-smartphone,
+.mail:focus .icon-envelope,
+.link:focus .icon-smartphone {
   fill: var(--blue-color);
 }
 
