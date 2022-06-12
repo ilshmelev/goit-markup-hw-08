@@ -1,62 +1,62 @@
 /* стили контактов в хедере */
 
-.auth-nav {
-  display: flex;
-  margin-left: auto;
+// .auth-nav {
+//   display: flex;
+//   margin-left: auto;
 
-  & .item .mail {
-    margin-right: 50px;
-    color: var(--secondary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+//   & .item .mail {
+//     margin-right: 50px;
+//     color: var(--secondary-text-color);
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     text-decoration: none;
+//     display: flex;
+//     align-items: center;
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
 
-  & .item .link {
-    color: var(--secondary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+//   & .item .link {
+//     color: var(--secondary-text-color);
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     text-decoration: none;
+//     display: flex;
+//     align-items: center;
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
 
-  & .item .mail:hover,
-  & .item .mail:focus {
-    color: var(--blue-color);
-  }
+//   & .item .mail:hover,
+//   & .item .mail:focus {
+//     color: var(--blue-color);
+//   }
 
-  & .item .link:hover,
-  & .item .link:focus {
-    color: var(--blue-color);
-  }
-}
+//   & .item .link:hover,
+//   & .item .link:focus {
+//     color: var(--blue-color);
+//   }
+// }
 
-.icon-envelope,
-.icon-smartphone {
-  display: inline-block;
-  align-items: center;
-  margin-right: 10px;
-  fill: var(--secondary-text-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// .icon-envelope,
+// .icon-smartphone {
+//   display: inline-block;
+//   align-items: center;
+//   margin-right: 10px;
+//   fill: var(--secondary-text-color);
+//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    fill: var(--blue-color);
-  }
-}
+//   &:hover,
+//   &:focus {
+//     fill: var(--blue-color);
+//   }
+// }
 
-.mail:hover .icon-envelope,
-.link:hover .icon-smartphone,
-.mail:focus .icon-envelope,
-.link:focus .icon-smartphone {
-  fill: var(--blue-color);
-}
+// .mail:hover .icon-envelope,
+// .link:hover .icon-smartphone,
+// .mail:focus .icon-envelope,
+// .link:focus .icon-smartphone {
+//   fill: var(--blue-color);
+// }

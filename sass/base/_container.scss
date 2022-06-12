@@ -1,18 +1,26 @@
 /* контейнер страницы */
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-.container-footer {
-  width: 1200px;
+.container {
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: baseline;
+  border: 1px solid red;
+}
+// 480+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+// 768+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+// 1200+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
