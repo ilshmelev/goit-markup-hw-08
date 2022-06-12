@@ -496,12 +496,27 @@ textarea {
   transform: translateY(-100%);
 }
 
+.portfolio__card-elment--focus {
+  text-decoration: none;
+}
+
+.portfolio__card-elment--focus:focus .overlay,
+.portfolio__card-elment--focus:hover .overlay {
+  transform: translateY(-100%);
+}
+
+.portfolio__card-elment--focus:focus,
+.portfolio__card-elment--focus:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
+  color: #212121;
 }
 
 .portfolio__list {
