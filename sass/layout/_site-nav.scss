@@ -150,8 +150,26 @@
           margin-right: 50px;
           position: relative;
         }
+                & .link {
+                      padding: 32px 0px;
+                      color: black;
+                      font-weight: 500;
+                      font-size: 14px;
+                      line-height: 1.14;
+                      letter-spacing: 0.02em;
+                      text-decoration: none;
+                      display: block;
+                      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                    }
+        
 }
+.mobile-menu,.burger-btn {
+  display: none;
 }
+
+
+}
+
 
 
 // .site-nav {

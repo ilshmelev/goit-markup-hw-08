@@ -2,9 +2,38 @@
 .auth-nav {
   display: none;
 }
-// .auth-nav {
-//   display: flex;
-//   margin-left: auto;
+
+// 768+
+@media screen and (min-width: 768px) {
+  .auth-nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    margin-left: auto;
+
+  }
+
+  & .item .mail {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    align-items: center;
+  }
+  & .item .link {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    align-items: center;
+  }
+
+    & .item {
+      padding-bottom: 10px;
+    }
+}
 
 //   & .item .mail {
 //     margin-right: 50px;
