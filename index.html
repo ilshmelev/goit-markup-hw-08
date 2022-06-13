@@ -24,8 +24,8 @@
   <body>
     <!-- header -->
 
-    <!-- <header class="header">
-      <div class="container header__main-nav">
+    <header class="header">
+      <section class="container header__main-nav">
         <nav class="header__main-nav">
           <a href="/" class="logo">
             Web<span class="header__logo--colortext">Studio</span>
@@ -37,10 +37,14 @@
             <li class="item">
               <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+            <li class="item"><a href="#" class="link">Контакты</a></li>
           </ul>
         </nav>
-
+        <button class="burger-btn js-open-menu">
+          <svg class="burger-btn__icon">
+            <use href="images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
         <ul class="auth-nav">
           <li class="item">
             <a href="mailto:info@devstudio.com" class="mail">
@@ -59,8 +63,55 @@
             >
           </li>
         </ul>
+      </section>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu__container" id="mobile-menu">
+          <button class="close-btn mobile-menu__close-btn js-close-menu">
+            <svg class="close-btn__icon">
+              <use href="images/sprite.svg#icon-close-mobile"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu__site-nav">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="link active-mobile">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="link">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu__auth-nav">
+            <li class="mobile-menu__phone">
+              <a href="tel:+380961111111" class="phone">+38 096 111 11 11 </a>
+            </li>
+            <li class="mobile-menu__mail">
+              <a href="mailto:info@devstudio.com" class="mail"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="mobile-menu__network-list">
+            <li class="mobile-menu__network-item">
+              <a href="#" class="mobile-menu__network-link">Instagram</a>
+            </li>
+            <li class="mobile-menu__network-item">
+              <a href="#" class="mobile-menu__network-link">Twitter</a>
+            </li>
+            <li class="mobile-menu__network-item">
+              <a href="#" class="mobile-menu__network-link">Facebook</a>
+            </li>
+            <li class="mobile-menu__network-item">
+              <a href="#" class="mobile-menu__network-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>-->
+    </header>
 
     <main>
       <!-- секция герой -->
@@ -590,5 +641,6 @@
     </div>
 
     <script src="./js/modal.js"></script> -->
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>

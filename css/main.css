@@ -23,7 +23,16 @@
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  border: 1px solid red;
+}
+
+.mobile-menu__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 48px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 480px) {
@@ -78,8 +87,39 @@ textarea {
   resize: none;
 }
 
+/* Убираем маркеры в списках по умолчанию */
+li {
+  list-style-type: none;
+}
+
+/* Убираем подчеркивание в ссылках по умолчанию */
+a {
+  text-decoration: none;
+}
+
+/* Убираем курсив по умолчанию */
+address {
+  font-style: normal;
+}
+
 /* модалка кнопка */
 /* логотип */
+.logo {
+  color: var(--blue-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.header__logo--colortext {
+  color: var(--main-black-color);
+}
+
+.footer__logo--colortext {
+  color: var(--white-color);
+}
+
 /* ===== кнопка героя =====*/
 /* ===== социальные сети  =====*/
 /* ===== Присоединяйтесь ===== */
@@ -91,7 +131,145 @@ textarea {
 /* ===== кнопка в футере =====*/
 /* хедер */
 /* навигация в хедере */
+.site-nav {
+  display: none;
+}
+
+.link {
+  color: var(--primary-text-color);
+}
+
+.phone {
+  color: var(--blue-color);
+}
+
+.mail {
+  color: var(--secondary-text-color);
+}
+
+.burger-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.burger-btn__icon {
+  width: 26px;
+  height: 16px;
+}
+
+.header__main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-top: 16px;
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white-color);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu__item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__phone {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  padding-bottom: 32px;
+}
+
+.mobile-menu__mail {
+  margin-bottom: 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.mobile-menu__network-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--blue-color);
+}
+
+.mobile-menu__network-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mobile-menu__network-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}
+
+.mobile-menu__network-item:not(:first-child) {
+  padding-left: 10px;
+}
+
+.mobile-menu__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.is-open {
+  opacity: 999;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.close-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.close-btn__icon {
+  width: 19px;
+  height: 19px;
+}
+
 /* стили контактов в хедере */
+.auth-nav {
+  display: none;
+}
+
 /* ===== секция герой =====*/
 /* ===== секция чем мы занимаемся =====*/
 /* ===== секция особенности =====*/
@@ -194,17 +372,8 @@ textarea {
 /* ===== футер =====*/
 /* ===== внутренние отступы портфолио =====*/
 /* анимация карточек */
-/* подчеркивание ссылки */
-.active::after {
-  display: block;
-  content: "";
-  width: 100%;
-  height: 4px;
-  background-color: var(--blue-color);
-  border-radius: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+/* выделение активной ссылки в модалке моб */
+.active-mobile {
   color: var(--blue-color);
 }
 /*# sourceMappingURL=main.css.map */

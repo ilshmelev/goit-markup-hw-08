@@ -1,7 +1,6 @@
 /* основные стили */
 body {
   background-color: var(--white-color);
-  
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -30,4 +29,18 @@ img {
 
 textarea {
   resize: none;
+}
+/* Убираем маркеры в списках по умолчанию */
+li {
+  list-style-type: none;
+}
+
+/* Убираем подчеркивание в ссылках по умолчанию */
+a {
+  text-decoration: none;
+}
+
+/* Убираем курсив по умолчанию */
+address {
+  font-style: normal;
 }

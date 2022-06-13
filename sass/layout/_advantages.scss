@@ -1,5 +1,6 @@
 /* ===== секция особенности =====*/
 
+// 0 - 767
 .advantages {
   display: block;
   padding-bottom: 60px;
@@ -35,7 +36,7 @@
     margin-bottom: 30px;
   }
 }
-
+// 768 - 1199
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages {
     padding-bottom: 30px;
@@ -59,7 +60,7 @@
     }
   }
 }
-
+// 1200
 @media screen and (min-width: 1200px) {
   .advantages {
         padding-bottom: 94px;

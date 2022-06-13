@@ -3,7 +3,17 @@
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  border: 1px solid red;
+
+}
+
+.mobile-menu__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 48px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 // 480+
 @media screen and (min-width: 480px) {

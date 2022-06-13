@@ -1,4 +1,141 @@
 /* навигация в хедере */
+
+.site-nav {
+  display: none;
+}
+
+.link {
+  color: var(--primary-text-color);
+}
+
+.phone {
+  color: var(--blue-color);
+}
+
+.mail {
+  color: var(--secondary-text-color);
+}
+
+.burger-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 0;
+  cursor: pointer;
+
+  &__icon {
+    width: 26px;
+    height: 16px;
+  }
+}
+
+.header__main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-top: 16px;
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white-color);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+  &__item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__phone {
+    font-style: normal;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 1.18;
+      letter-spacing: 0.02em;
+      padding-bottom: 32px;
+  }
+
+  &__mail {
+    margin-bottom: 32px;
+    font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      color: var(--secondary-text-color);
+  }
+
+  &__network-link {
+    font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22;
+      letter-spacing: 0.02em;
+      color: var(--blue-color);
+  }
+
+  &__network-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__network-item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+  }
+
+    &__network-item:not(:first-child) {
+      padding-left: 10px;
+    }
+
+  &__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+}
+
+.is-open {
+  opacity: 999;
+  visibility: visible;
+  pointer-events: auto;
+} 
+
+.close-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+  &__icon {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+
 // .site-nav {
 //   margin-left: 93px;
 //   display: flex;
