@@ -265,6 +265,19 @@ address {
   height: 19px;
 }
 
+@media screen and (min-width: 768px) {
+  .site-nav {
+    margin-left: 93px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .site-nav .item {
+    margin-right: 50px;
+    position: relative;
+  }
+}
+
 /* стили контактов в хедере */
 .auth-nav {
   display: none;
