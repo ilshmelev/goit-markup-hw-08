@@ -130,13 +130,19 @@ address {
 /* ===== портфолио карточки =====*/
 /* ===== кнопка в футере =====*/
 /* хедер */
+@media screen and (min-whidth: 768px) {
+  .header {
+    border-bottom: 1px solid red;
+  }
+  .header__main-nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
 /* навигация в хедере */
 .site-nav {
   display: none;
-}
-
-.link {
-  color: var(--primary-text-color);
 }
 
 .phone {
@@ -166,8 +172,6 @@ address {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 16px;
-  padding-top: 16px;
 }
 
 .mobile-menu {
@@ -182,6 +186,10 @@ address {
   visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu__link {
+  color: var(--primary-text-color);
 }
 
 .mobile-menu__item {
@@ -287,8 +295,42 @@ address {
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .mobile-menu, .burger-btn {
+  .site-nav .link:hover,
+  .site-nav .link:focus,
+  .site-nav .active {
+    color: var(--blue-color);
+  }
+  .mobile-menu,
+  .burger-btn {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    margin-left: 93px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .site-nav .item {
+    margin-right: 50px;
+    position: relative;
+    color: black;
+  }
+  .site-nav .item:last-child {
+    margin-right: 0;
+  }
+  .site-nav .link {
+    padding: 32px 0px;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -297,31 +339,82 @@ address {
   display: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .auth-nav .item > .header-adress__link--margin {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .auth-nav {
     display: flex;
     flex-direction: column;
-    padding-top: 16px;
     margin-left: auto;
   }
-  .item .mail {
+  .auth-nav .item .header-adress__link {
     color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
+    display: flex;
     align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .item .link {
+  .auth-nav .item .mail:hover,
+  .auth-nav .item .mail:focus {
+    color: var(--blue-color);
+  }
+  .auth-nav .item .link:hover,
+  .auth-nav .item .link:focus {
+    color: var(--blue-color);
+  }
+  .auth-nav .header-adress__link {
+    display: block;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+  }
+  .phone {
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    align-items: center;
+    color: var(--secondary-text-color);
   }
-  .item {
-    padding-bottom: 10px;
+  .icon-envelope,
+  .icon-smartphone {
+    display: inline-block;
+    align-items: center;
+    margin-right: 10px;
+    fill: var(--secondary-text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .icon-envelope:hover, .icon-envelope:focus,
+  .icon-smartphone:hover,
+  .icon-smartphone:focus {
+    fill: var(--blue-color);
+  }
+  .mail:hover .icon-envelope,
+  .link:hover .icon-smartphone,
+  .mail:focus .icon-envelope,
+  .link:focus .icon-smartphone {
+    fill: var(--blue-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .item .header-adress__link {
+    margin: 0 30px 0 0;
   }
 }
 
@@ -427,6 +520,19 @@ address {
 /* ===== футер =====*/
 /* ===== внутренние отступы портфолио =====*/
 /* анимация карточек */
+.active::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: var(--blue-color);
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: var(--blue-color);
+}
+
 /* выделение активной ссылки в модалке моб */
 .active-mobile {
   color: var(--blue-color);

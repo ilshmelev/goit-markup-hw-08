@@ -1,9 +1,10 @@
 /* хедер */
-// .header {
-//   border-bottom: 1px solid #ececec;
-//   &__main-nav {
-//     display: flex;
-//     align-items: center;
-//   }
-// }
-
+@media screen and (min-whidth: 768px) {
+.header {
+  border-bottom: 1px solid red;
+  &__main-nav {
+    display: flex;
+    align-items: center;
+  }
+}
+}
