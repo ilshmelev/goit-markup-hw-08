@@ -121,6 +121,28 @@ address {
 }
 
 /* ===== кнопка героя =====*/
+.button {
+  min-width: 200px;
+  padding: 10px 32px;
+  border: 0px;
+  border-radius: 4px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+}
+
+.button:hover, .button:focus {
+  color: var(--white-color);
+  background-color: var(--blue-color);
+}
+
 /* ===== социальные сети  =====*/
 /* ===== Присоединяйтесь ===== */
 /* ===== Подпишитесь на рассылку =====*/
@@ -128,6 +150,78 @@ address {
 /* ===== модалка форма =====*/
 /* ===== навигация портфолио =====*/
 /* ===== портфолио карточки =====*/
+.portfolio__cards {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio__card-elment {
+  margin-right: 30px;
+  border: 1px solid #eeeeee;
+  cursor: pointer;
+}
+
+.portfolio__card-elment:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
+
+.portfolio__card-elment:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio__card-elment:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio__card-elment:focus .overlay,
+.portfolio__card-elment:hover .overlay {
+  transform: translateY(-100%);
+}
+
+.portfolio__card-elment--focus {
+  text-decoration: none;
+}
+
+.portfolio__card-elment--focus:focus .overlay {
+  transform: translateY(-100%);
+}
+
+.portfolio__card-elment--focus:hover .overlay {
+  transform: translateY(-100%);
+}
+
+.portfolio__card-elment--focus:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio__card-elment--focus:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  color: #212121;
+}
+
+.portfolio__list {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.portfolio__card-text {
+  padding: 20px 24px 20px 24px;
+}
+
+.portfolio__cards--box-shadow:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 /* ===== кнопка в футере =====*/
 /* хедер */
 @media screen and (min-whidth: 768px) {
@@ -419,6 +513,68 @@ address {
 }
 
 /* ===== секция герой =====*/
+.hero {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../../images/mobile/bg-main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2f303a;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 187px;
+  padding-top: 213px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+}
+
+.hero__title {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 320px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), (min-resolution: 192dpi) and (min-width: 320px), (min-resolution: 2dppx) and (min-width: 320px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/bg-main@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/bg-main.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/bg-main@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.4;
+  }
+  .hero {
+    min-height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/bg-main.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/bg-main@2x.jpg);
+  }
+}
+
 /* ===== секция чем мы занимаемся =====*/
 /* ===== секция особенности =====*/
 .advantages {
@@ -520,6 +676,32 @@ address {
 /* ===== футер =====*/
 /* ===== внутренние отступы портфолио =====*/
 /* анимация карточек */
+.portfolio__card-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  width: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  color: var(--white-color);
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  font-weight: normal;
+  position: absolute;
+  top: 100%;
+  overflow: auto;
+  left: 0;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__card-slide:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .active::after {
   display: block;
   content: "";
