@@ -23,7 +23,6 @@
 
   <body>
     <!-- header -->
-
     <header class="header">
       <section class="container header__main-nav">
         <nav class="header__main-nav">
@@ -121,7 +120,6 @@
 
     <main>
       <!-- секция герой -->
-
       <section class="hero">
         <h1 class="hero__title container">
           Эффективные решения<br />
@@ -133,7 +131,6 @@
       </section>
 
       <!--   секция особенности  -->
-
       <section class="advantages">
         <ul class="advantages__list container">
           <li class="advantages__item">
@@ -189,7 +186,7 @@
 
       <!-- чем мы занимаемся -->
 
-      <!-- <section class="services">
+      <section class="services">
         <div class="container">
           <h2 class="services__title">Чем мы занимаемся</h2>
           <ul class="services__list">
@@ -225,46 +222,92 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Наша команда -->
 
-      <!-- <section class="team-section">
+      <section class="team-section">
         <div class="container">
           <h2 class="team-section__title">Наша команда</h2>
           <ul class="team-section__list">
             <li class="team-section__item">
-              <img
-                src="./images/Igor.jpg"
-                alt="мужчина улыбается"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/desktop/team1.webp, 1x"
+                  ,
+                  srcset="./images/desktope/team1@2x.webp, 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/desktop/team1.jpg, 1x"
+                  ,
+                  srcset="./images/desktope/team1@2x.jpg, 2x"
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/tablet/team1.webp, 1x"
+                  ,
+                  srcset="./images/tablet/team1@2x.webp, 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/tablet/team1.jpg, 1x"
+                  ,
+                  srcset="./images/tablet/team1@2x.jpg, 2x"
+                />
+
+                <source
+                  media="(min-width:480px)"
+                  srcset="./images/mobile/team1.webp, 1x"
+                  ,
+                  srcset="./images/mobile/team1@2x.webp, 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:480px)"
+                  srcset="./images/mobile/team1.jpg, 1x"
+                  ,
+                  srcset="./images/mobile/team1@2x.jpg, 2x"
+                />
+                <img
+                  src="./images/img-1-2.jpg"
+                  alt="фото_сотрудника1"
+                  class="team-cards__img"
+                />
+              </picture>
               <div class="container-team-names">
                 <p class="team-section__worker-name">Игорь Демьяненко</p>
                 <p class="team-section__position">Product Designer</p>
                 <ul class="social-links">
-                  <li>
+                  <li class="team-cards__list-item">
                     <a href="#" class="social-links__link-icon">
                       <svg width="20" height="20">
                         <use href="images/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+
+                  <li class="team-cards__list-item">
                     <a href="#" class="social-links__link-icon">
                       <svg width="20" height="20">
                         <use href="images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+
+                  <li class="team-cards__list-item">
                     <a href="#" class="social-links__link-icon">
                       <svg width="20" height="20">
                         <use href="images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+
+                  <li class="team-cards__list-item">
                     <a href="#" class="social-links__link-icon">
                       <svg width="20" height="20">
                         <use href="images/sprite.svg#icon-linkedin"></use>
@@ -275,11 +318,50 @@
               </div>
             </li>
             <li class="team-section__item">
-              <img
-                src="./images/Olga.jpg"
-                alt="женщина улыбается"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/desktop/team2.webp, 1x"
+                  ,
+                  srcset="./images/desktope/team2@2x.webp, 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/desktop/team2.jpg, 1x"
+                  ,
+                  srcset="./images/desktope/team2@2x.jpg, 2x"
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/tablet/team2.webp, 1x"
+                  ,
+                  srcset="./images/tablet/team2@2x.webp, 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/tablet/team2.jpg, 1x"
+                  ,
+                  srcset="./images/tablet/team2@2x.jpg, 2x"
+                />
+
+                <source
+                  media="(min-width:270px)"
+                  srcset="./images/mobile/team2.webp, 1x"
+                  ,
+                  srcset="./images/mobile/team2@2x.webp, 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:270px)"
+                  srcset="./images/mobile/team2.jpg, 1x"
+                  ,
+                  srcset="./images/mobile/team2@2x.jpg, 2x"
+                />
+                <img src="./images/img-2-2.jpg" alt="фото_сотрудника2" />
+              </picture>
               <div class="container-team-names">
                 <p class="team-section__worker-name">Ольга Репина</p>
                 <p class="team-section__position">Frontend Developer</p>
@@ -316,11 +398,50 @@
               </div>
             </li>
             <li class="team-section__item">
-              <img
-                src="./images/Nikolay.jpg"
-                alt="мужчина улыбается"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/desktop/team3.webp, 1x"
+                  ,
+                  srcset="./images/desktope/team3@2x.webp, 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/desktop/team3.jpg, 1x"
+                  ,
+                  srcset="./images/desktope/team3@2x.jpg, 2x"
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/tablet/team3.webp, 1x"
+                  ,
+                  srcset="./images/tablet/team3@2x.webp, 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/tablet/team3.jpg, 1x"
+                  ,
+                  srcset="./images/tablet/team3@2x.jpg, 2x"
+                />
+
+                <source
+                  media="(min-width:270px)"
+                  srcset="./images/mobile/team3.webp, 1x"
+                  ,
+                  srcset="./images/mobile/team3@2x.webp, 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:270px)"
+                  srcset="./images/mobile/team3.jpg, 1x"
+                  ,
+                  srcset="./images/mobile/team3@2x.jpg, 2x"
+                />
+                <img src="./images/img-3-2.jpg" alt="фото_сотрудника3" />
+              </picture>
               <div class="container-team-names">
                 <p class="team-section__worker-name">Николай Тарасов</p>
                 <p class="team-section__position">Marketing</p>
@@ -357,11 +478,50 @@
               </div>
             </li>
             <li class="team-section__item">
-              <img
-                src="./images/Michael.jpg"
-                alt="мужчина улыбается"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/desktop/team4.webp, 1x"
+                  ,
+                  srcset="./images/desktope/team4@2x.webp, 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/desktop/team4.jpg, 1x"
+                  ,
+                  srcset="./images/desktope/team4@2x.jpg, 2x"
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/tablet/team4.webp, 1x"
+                  ,
+                  srcset="./images/tablet/team4@2x.webp, 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/tablet/team4.jpg, 1x"
+                  ,
+                  srcset="./images/tablet/team4@2x.jpg, 2x"
+                />
+
+                <source
+                  media="(min-width:270px)"
+                  srcset="./images/mobile/team4.webp, 1x"
+                  ,
+                  srcset="./images/mobile/team4@2x.webp, 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:270px)"
+                  srcset="./images/mobile/team4.jpg, 1x"
+                  ,
+                  srcset="./images/mobile/team4@2x.jpg, 2x"
+                />
+                <img src="./images/img-4-2.jpg" alt="фото_сотрудника4" />
+              </picture>
               <div class="container-team-names">
                 <p class="team-section__worker-name">Михаил Ермаков</p>
                 <p class="team-section__position">UI Designer</p>
@@ -399,11 +559,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Постоянные клиенты -->
 
-      <!-- <section class="clients-section">
+      <section class="clients-section">
         <div class="container">
           <h2 class="clients-section__title">Постоянные клиенты</h2>
           <ul class="clients-section__list">
@@ -451,7 +611,7 @@
             </li>
           </ul>
         </div>
-      </section>-->
+      </section>
     </main>
 
     <!-- Футер -->
