@@ -103,6 +103,25 @@ address {
 }
 
 /* модалка кнопка */
+.form-submit {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  display: flex;
+  margin: 0 auto;
+  border: transparent;
+  background-color: var(--blue-color);
+  padding: 10px 55px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 /* логотип */
 .logo {
   color: var(--blue-color);
@@ -170,9 +189,280 @@ address {
 }
 
 /* ===== Присоединяйтесь ===== */
+.join {
+  margin-left: 70px;
+}
+
+.join__title {
+  margin-bottom: 20px;
+  color: #eeeeee;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.join__list {
+  display: flex;
+  align-items: center;
+}
+
+.join__icon {
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--white-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.join__icon:focus, .join__icon:hover {
+  background-color: var(--blue-color);
+}
+
 /* ===== Подпишитесь на рассылку =====*/
+.subscribe {
+  margin-left: 92px;
+}
+
+.subscribe__title {
+  margin-bottom: 20px;
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-form-input {
+  margin-right: 12px;
+  background-color: #2f303a;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  width: 358px;
+  height: 50px;
+  left: 815px;
+  top: 2787px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  outline: none;
+  cursor: pointer;
+}
+
 /* ===== бэкдроп =====*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 /* ===== модалка форма =====*/
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 528px;
+  min-height: 581px;
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-modal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: var(--white-color);
+}
+
+.close-modal:hover, .close-modal:focus {
+  fill: var(--blue-color);
+}
+
+.close-icon {
+  width: 11px;
+  height: 11px;
+}
+
+.form {
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.form__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.form__box {
+  margin-top: 12px;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  color: var(--secondary-text-color);
+}
+
+.form__container > input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  padding-left: 42px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__input:focus, .form__input:hover {
+  outline: none;
+  border-color: var(--blue-color);
+}
+
+.form__input:focus + .form__icon,
+.form__input:hover + .form__icon {
+  fill: var(--blue-color);
+}
+
+.form__container {
+  position: relative;
+}
+
+.form__container > textarea::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form__container > textarea {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__container > textarea:focus,
+.form__container > textarea:hover {
+  outline: none;
+  border-color: var(--blue-color);
+}
+
+.form__icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.from-policy {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.from-policy__checkbox {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  margin-left: 4px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.from-policy__checkbox::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.policy-checkbox:checked + .from-policy__checkbox::before {
+  background-color: var(--blue-color);
+  border-color: var(--blue-color);
+  background-image: url("../images/full-check.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.policy-checkbox:focus + .from-policy__checkbox::before,
+.policy-checkbox:hover + .from-policy__checkbox::before {
+  border-color: var(--blue-color);
+}
+
+.from-policy__contract {
+  color: var(--blue-color);
+}
+
 /* ===== навигация портфолио =====*/
 /* ===== портфолио карточки =====*/
 .portfolio__cards {
@@ -216,14 +506,6 @@ address {
   transform: translateY(-100%);
 }
 
-.portfolio__card-elment--focus:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio__card-elment--focus:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .portfolio__title {
   font-weight: 700;
   font-size: 18px;
@@ -243,11 +525,39 @@ address {
   padding: 20px 24px 20px 24px;
 }
 
-.portfolio__cards--box-shadow:focus {
+.portfolio__card-elment:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* ===== кнопка в футере =====*/
+.footer-form-button {
+  width: 200px;
+  height: 50px;
+  background: var(--blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  padding: 10px 62px 10px 29px;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.footer-form-button::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/send.svg);
+  position: absolute;
+  right: 28px;
+  top: 13px;
+}
+
 /* хедер */
 @media screen and (min-whidth: 768px) {
   .header {
@@ -985,6 +1295,49 @@ address {
 }
 
 /* ===== футер =====*/
+@media screen and (min-width: 480px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  .footer__logo--margin {
+    margin-bottom: 20px;
+  }
+  .footer__address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--white-color);
+    margin-bottom: 9px;
+  }
+  .footer__item {
+    font-style: normal;
+    font-weight: 400;
+  }
+  .footer__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .footer__item .footer__link {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+  }
+  .footer__link:hover,
+  .footer__link:focus {
+    color: var(--blue-color);
+  }
+}
+
 /* ===== внутренние отступы портфолио =====*/
 /* анимация карточек */
 .portfolio__card-slide {
