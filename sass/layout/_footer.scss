@@ -1,13 +1,54 @@
 /* ===== футер =====*/
 
-@media screen and (min-width: 480px) {
-  .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #2f303a;
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+
+  &__address-section {
+    margin-top: 20px;
+  }
+
+  &__address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--white-color);
+    margin-bottom: 8px;
+  }
+  &__item .footer__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 8px;
   }
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__section {
+    flex-direction: unset;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer {
+    &__address-section {
+      margin-bottom: 60px;
+    }
+
+    &__section {
+      text-align: center;
+    }
+
+    &__contacts {
+      margin-bottom: 60px;
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -15,6 +56,10 @@
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+
+    &__address-section {
+      margin-bottom: 0;
+    }
   }
 
   .footer__logo--margin {
@@ -22,26 +67,17 @@
   }
 
   .footer__address {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    color: var(--white-color);
     margin-bottom: 9px;
   }
 
   .footer__item {
-    font-style: normal;
-    font-weight: 400;
     &:not(:last-child) {
       margin-bottom: 9px;
     }
   }
 
   .footer__item .footer__link {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
+    margin-bottom: 9px;
   }
 
   .footer__link:hover,

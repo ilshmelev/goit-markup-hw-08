@@ -1,17 +1,24 @@
 /* логотип */
+
 .logo {
   color: var(--blue-color);
   font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
 }
-
 .header__logo--colortext {
   color: var(--main-black-color);
-  
 }
 .footer__logo--colortext {
-  
   color: var(--white-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }

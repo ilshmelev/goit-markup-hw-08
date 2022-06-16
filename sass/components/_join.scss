@@ -1,15 +1,12 @@
 /* ===== Присоединяйтесь ===== */
 
 .join {
-  margin-left: 70px;
-
   &__title {
     margin-bottom: 20px;
     color: #eeeeee;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
   }
 
@@ -34,5 +31,22 @@
     &:hover {
       background-color: var(--blue-color);
     }
+  }
+}
+@media screen and (max-width: 767px) {
+  .join__list {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .join__list {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-left: 70px;
   }
 }
