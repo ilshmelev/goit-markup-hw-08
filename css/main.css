@@ -1467,6 +1467,11 @@ address {
 }
 
 /* ===== внутренние отступы портфолио =====*/
+.portfolio {
+  padding-top: 91px;
+  padding-bottom: 94px;
+}
+
 /* анимация карточек */
 .portfolio__card-slide {
   position: relative;
