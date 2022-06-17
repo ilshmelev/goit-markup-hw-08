@@ -1,0 +1,48 @@
+/* Иконки соц-сетей */
+
+.team-network {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 32px 30px;
+  justify-content: center;
+}
+.team-network__item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--extra-blue-color);
+  }
+}
+
+.team-network__item-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-network__item-icon {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--icon-bg-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .team-network__item:hover &,
+  .team-network__item:focus & {
+    fill: var(--main-white-color);
+  }
+}

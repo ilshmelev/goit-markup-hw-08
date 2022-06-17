@@ -1,0 +1,43 @@
+/* Стили для секции услуг компании */
+@media screen and (max-width: 1199px) {
+  .company-services {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .company-services {
+    padding-bottom: 94px;
+  }
+
+  .company-services__head {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .company-competence {
+    display: flex;
+    justify-content: space-between;
+  }
+  .company-competence__tumb {
+    position: relative;
+  }
+
+  .company-competence__attachment {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 27px;
+    margin: 0;
+    width: 370px;
+    height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    color: var(--main-white-color);
+    text-transform: uppercase;
+    background-color: var(--attachment-bg-color);
+  }
+}
