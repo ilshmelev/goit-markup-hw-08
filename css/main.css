@@ -849,7 +849,6 @@ address {
   }
   .site-nav .link {
     padding: 32px 0px;
-    color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
