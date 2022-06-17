@@ -325,8 +325,8 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -355,7 +355,7 @@ address {
 }
 
 .form {
-  width: 448px;
+  width: 370px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 40px;
@@ -465,12 +465,12 @@ address {
 .from-policy__checkbox {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-left: 4px;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
 }
@@ -501,6 +501,28 @@ address {
 
 .from-policy__contract {
   color: var(--blue-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
+  .form {
+    width: 448px;
+  }
+  __checkbox {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    margin-left: 4px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* ===== навигация портфолио =====*/
@@ -579,6 +601,10 @@ address {
 }
 
 .portfolio__card-elment:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio__card-elment:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -699,10 +725,11 @@ address {
 }
 
 /* хедер */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 @media screen and (min-whidth: 768px) {
-  .header {
-    border-bottom: 1px solid red;
-  }
   .header__main-nav {
     display: flex;
     align-items: center;
@@ -929,9 +956,10 @@ address {
     display: flex;
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 30px;
   }
   .auth-nav .item .link {
-    color: var(--primary-text-color);
+    color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
