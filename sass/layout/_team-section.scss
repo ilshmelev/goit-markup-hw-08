@@ -73,6 +73,7 @@
     margin-top: calc(-1 * var(--card-set-gap));
   }
   .team-cards__list-item {
+    margin-right: 10px;
     flex-basis: calc(100% - var(--card-set-gap)) / 4;
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);
