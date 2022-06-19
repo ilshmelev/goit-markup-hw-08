@@ -992,6 +992,12 @@ address {
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
   }
+  .auth-nav__link--padding {
+    padding-bottom: 20px;
+  }
+  .auth-nav .mail {
+    padding-top: 20px;
+  }
   .phone {
     font-style: normal;
     font-weight: 500;
