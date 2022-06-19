@@ -1,0 +1,60 @@
+/* Стили секции команда */
+
+.team-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f5f4fa;
+}
+.team-section__head {
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team-cards__list-item {
+  padding: 0px;
+  background-color: var(--main-white-color);
+  border: var(--border-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: var(--box-shadow);
+}
+.team-cards__card {
+  padding-top: 30px;
+}
+.team-cards__title {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.team-cards__text {
+  font-size: 16px;
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin-bottom: 16px;
+}
+.team-cards__list-item {
+  flex-basis: calc(100% - var(--card-set-gap)) / 4;
+  padding: 0px;
+  background-color: var(--main-white-color);
+  border: var(--border-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: var(--box-shadow);
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .team-section__head {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}

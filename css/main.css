@@ -81,6 +81,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 textarea {
@@ -246,6 +248,12 @@ address {
 }
 
 /* ===== Подпишитесь на рассылку =====*/
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .subscribe__title {
   margin-bottom: 20px;
   color: var(--white-color);
@@ -264,10 +272,8 @@ address {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
-  width: 450px;
+  width: 100%;
   height: 50px;
-  left: 815px;
-  top: 2787px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -275,6 +281,10 @@ address {
   padding-left: 16px;
   outline: none;
   cursor: pointer;
+}
+
+.footer-form-input:hover, .footer-form-input:focus {
+  border: 1px solid var(--blue-color);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -647,10 +657,12 @@ address {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: -15px;
+    margin-right: -15px;
   }
   .portfolio__card-elment:not(:last-child) {
-    margin-bottom: 8px;
-    margin-right: 8px;
+    margin-bottom: 15px;
+    margin-right: 15px;
   }
 }
 
@@ -1275,7 +1287,7 @@ address {
 }
 
 .container-team-names {
-  padding: 30px 0px 30px 0px;
+  padding: 30px 32px 30px 32px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1334,10 +1346,9 @@ address {
 .clients-section__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: -15px;
   padding: 0;
-  margin-top: -15px;
-  margin-left: -15px;
+  justify-content: center;
   list-style: none;
   transition-property: color;
   transition-duration: 250ms;
@@ -1349,6 +1360,7 @@ address {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  margin: 15px;
 }
 
 .clients-section__link {
@@ -1357,8 +1369,6 @@ address {
   align-items: center;
   width: 210px;
   height: 92px;
-  margin-left: 15px;
-  margin-top: 15px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   outline: transparent;
@@ -1399,8 +1409,6 @@ address {
 
 @media screen and (min-width: 768px) {
   .clients-section__link {
-    margin-left: 25px;
-    margin-bottom: 25px;
     width: 226px;
     height: 92px;
   }
@@ -1420,17 +1428,6 @@ address {
     text-align: center;
     letter-spacing: 0.03em;
   }
-  .clients-section__list {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
   .clients-section__item {
     display: flex;
     justify-content: center;
@@ -1438,9 +1435,6 @@ address {
     text-decoration: none;
   }
   .clients-section__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
@@ -1566,9 +1560,10 @@ address {
 
 .overlay {
   width: 100%;
+  height: 294px;
   background: rgba(33, 150, 243, 0.9);
   color: var(--white-color);
-  padding: 63px 24px;
+  padding: 100px 24px;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -1583,6 +1578,71 @@ address {
 
 .portfolio__card-slide:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* Стили секции команда */
+.team-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f5f4fa;
+}
+
+.team-section__head {
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team-cards__list-item {
+  padding: 0px;
+  background-color: var(--main-white-color);
+  border: var(--border-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: var(--box-shadow);
+}
+
+.team-cards__card {
+  padding-top: 30px;
+}
+
+.team-cards__title {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.team-cards__text {
+  font-size: 16px;
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.team-cards__list-item {
+  flex-basis: calc(100% - var(--card-set-gap))/4;
+  padding: 0px;
+  background-color: var(--main-white-color);
+  border: var(--border-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: var(--box-shadow);
+}
+
+.team-cards__list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .team-section__head {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }
 
 .active::after {
