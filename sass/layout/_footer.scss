@@ -6,7 +6,7 @@
   background-color: #2f303a;
 
   &__address-section {
-    margin-top: 20px;
+    margin-bottom: 60px;
   }
 
   &__address {
@@ -23,6 +23,14 @@
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 8px;
   }
+
+  &__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.footer__logo--margin {
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -37,16 +45,8 @@
 
 @media screen and (max-width: 1199px) {
   .footer {
-    &__address-section {
-      margin-bottom: 60px;
-    }
-
     &__section {
       text-align: center;
-    }
-
-    &__contacts {
-      margin-bottom: 60px;
     }
   }
 }
@@ -60,10 +60,6 @@
     &__address-section {
       margin-bottom: 0;
     }
-  }
-
-  .footer__logo--margin {
-    margin-bottom: 20px;
   }
 
   .footer__address {

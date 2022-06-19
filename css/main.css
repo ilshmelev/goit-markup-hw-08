@@ -144,7 +144,7 @@ address {
 }
 
 @media screen and (max-width: 767px) {
-  .logo {
+  .header__main-nav--padding {
     padding-top: 16px;
     padding-bottom: 16px;
   }
@@ -237,7 +237,7 @@ address {
 }
 
 @media screen and (max-width: 767px) {
-  .join__list {
+  .join {
     margin-bottom: 60px;
   }
 }
@@ -1191,7 +1191,7 @@ address {
     line-height: 1.4;
   }
   .hero {
-    min-height: 600px;
+    max-height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/bg-main.jpg);
   }
 }
@@ -1283,26 +1283,21 @@ address {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .advantages {
-    padding-bottom: 30px;
-  }
   .advantages__title {
     text-align: left;
   }
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
   .advantages__item {
-    min-width: 354px;
-    flex-basis: calc((100% / 2));
-  }
-  .advantages__item:nth-child(2n + 1) {
-    padding-right: 30px;
+    max-width: 354px;
+    margin: 15px;
+    flex-basis: calc((100% - 60px) / 2);
   }
 }
 
@@ -1577,7 +1572,7 @@ address {
 }
 
 .footer__address-section {
-  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .footer__address {
@@ -1596,6 +1591,14 @@ address {
   margin-bottom: 8px;
 }
 
+.footer__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.footer__logo--margin {
+  margin-bottom: 20px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__section {
     flex-direction: unset;
@@ -1607,14 +1610,8 @@ address {
 }
 
 @media screen and (max-width: 1199px) {
-  .footer__address-section {
-    margin-bottom: 60px;
-  }
   .footer__section {
     text-align: center;
-  }
-  .footer__contacts {
-    margin-bottom: 60px;
   }
 }
 
@@ -1626,9 +1623,6 @@ address {
   }
   .footer__section__address-section {
     margin-bottom: 0;
-  }
-  .footer__logo--margin {
-    margin-bottom: 20px;
   }
   .footer__address {
     margin-bottom: 9px;
