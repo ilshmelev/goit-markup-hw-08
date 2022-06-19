@@ -998,6 +998,9 @@ address {
   .auth-nav .mail {
     padding-top: 20px;
   }
+  .auth-nav__item--margin {
+    margin-bottom: 10px;
+  }
   .phone {
     font-style: normal;
     font-weight: 500;
@@ -1044,21 +1047,102 @@ address {
   }
 }
 
+/* Основные стили контента страницы */
+.hero {
+  background-color: var(--hero-footer-bg-color);
+  text-align: center;
+}
+
+.hero__content {
+  padding: 118px 0px;
+  text-align: center;
+}
+
+.hero__text {
+  color: var(--main-white-color);
+  letter-spacing: 0.06em;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero__button {
+  min-width: 200px;
+  padding: 10px 32px;
+  border: 0px;
+  border-radius: 4px;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  background-color: var(--extra-blue-color);
+  color: var(--main-white-color);
+  cursor: pointer;
+}
+
+.overlay {
+  min-height: 400px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/bg-main.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 320px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), (min-resolution: 192dpi) and (min-width: 320px), (min-resolution: 2dppx) and (min-width: 320px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/bg-main@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/bg-main.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/bg-main@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__content {
+    padding: 200px 0;
+  }
+  .hero__text {
+    font-size: 44px;
+    line-height: 1.4;
+  }
+  .overlay {
+    min-height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/bg-main.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/bg-main@2x.jpg);
+  }
+}
+
 /* ===== секция герой =====*/
 .hero {
-  min-height: 400px;
+  max-height: 400px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../images/mobile/bg-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #2f303a;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 187px;
-  padding-top: 213px;
+  padding-bottom: 118px;
+  padding-top: 118px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  height: 600px;
 }
 
 .hero__title {
