@@ -2,8 +2,7 @@
 .portfolio__site-nav {
   display: flex;
   justify-content: center;
-  padding-bottom: 40px;
-  padding-top: 60px;
+  margin-bottom: 40px;
 }
 
 .portfolio__project {
@@ -36,7 +35,7 @@
 
 @media screen and (min-width: 768px) {
   .portfolio__site-nav {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -53,7 +52,6 @@
 }
 @media screen and (min-width: 1200px) {
   .portfolio__site-nav {
-    padding-bottom: 50px;
-    padding-top: 94px;
+    margin-bottom: 50px;
   }
 }

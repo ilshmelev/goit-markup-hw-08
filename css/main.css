@@ -537,8 +537,7 @@ address {
 .portfolio__site-nav {
   display: flex;
   justify-content: center;
-  padding-bottom: 40px;
-  padding-top: 60px;
+  margin-bottom: 40px;
 }
 
 .portfolio__project {
@@ -569,7 +568,7 @@ address {
 
 @media screen and (min-width: 768px) {
   .portfolio__site-nav {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -586,8 +585,7 @@ address {
 
 @media screen and (min-width: 1200px) {
   .portfolio__site-nav {
-    padding-bottom: 50px;
-    padding-top: 94px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1549,7 +1547,15 @@ address {
 
 /* ===== внутренние отступы портфолио =====*/
 .portfolio {
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 /* анимация карточек */
