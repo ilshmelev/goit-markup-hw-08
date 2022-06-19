@@ -995,12 +995,6 @@ address {
   .auth-nav__link--padding {
     padding-bottom: 20px;
   }
-  .auth-nav .mail {
-    padding-top: 20px;
-  }
-  .auth-nav__item--margin {
-    margin-bottom: 10px;
-  }
   .phone {
     font-style: normal;
     font-weight: 500;
@@ -1027,6 +1021,15 @@ address {
   .mail:focus .icon-envelope,
   .link:focus .icon-smartphone {
     fill: var(--blue-color);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .auth-nav .mail {
+    padding-top: 20px;
+  }
+  .auth-nav__item--margin {
+    margin-bottom: 10px;
   }
 }
 
