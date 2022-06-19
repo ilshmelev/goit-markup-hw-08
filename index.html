@@ -229,55 +229,38 @@
           <ul class="team-section__list">
             <li class="team-section__item">
               <picture>
-                <source
-                  media="(min-width:1200px)"
-                  srcset="./images/desktop/team1.webp, 1x"
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width:1200px)"
-                  srcset="./images/desktope/team1@2x.webp, 2x"
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width:1200px)"
-                  srcset="./images/desktop/team1.jpg, 1x"
-                  ,
-                  srcset="./images/desktope/team1@2x.jpg, 2x"
-                />
+                <!-- Набір зображень для десктопних екранів -->
 
                 <source
-                  media="(min-width:768px)"
-                  srcset="./images/tablet/team1.webp, 1x"
-                  ,
-                  srcset="./images/tablet/team1@2x.webp, 2x"
-                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/team1.jpg    1x,
+                    ./images/desktop/team1@2x.jpg 2x
+                  "
+                  type="image/jpg"
                 />
-                <source
-                  media="(min-width:768px)"
-                  srcset="./images/tablet/team1.jpg, 1x"
-                  ,
-                  srcset="./images/tablet/team1@2x.jpg, 2x"
-                />
+                <!-- Набір зображень для планшетних екранів -->
 
                 <source
-                  media="(min-width:480px)"
-                  srcset="./images/mobile/team1.webp, 1x"
-                  ,
-                  srcset="./images/mobile/team1@2x.webp, 2x"
-                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team1.jpg    1x,
+                    ./images/tablet/team1@2x.jpg 2x
+                  "
+                  type="image/jpg"
                 />
+                <!-- Набір зображень для мобільних екранів -->
+
                 <source
-                  media="(min-width:480px)"
-                  srcset="./images/mobile/team1.jpg, 1x"
-                  ,
-                  srcset="./images/mobile/team1@2x.jpg, 2x"
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/team1.jpg    1x,
+                    ./images/mobile/team1@2x.jpg 2x
+                  "
+                  type="image/jpg"
                 />
-                <img
-                  src="./images/img-1-2.jpg"
-                  alt="фото_сотрудника1"
-                  class="team-cards__img"
-                />
+                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                <img src="./images/img-1-2.jpg" alt="фото_сотрудника1" />
               </picture>
               <div class="container-team-names">
                 <p class="team-section__worker-name">Игорь Демьяненко</p>
@@ -319,47 +302,37 @@
             </li>
             <li class="team-section__item">
               <picture>
-                <source
-                  media="(min-width:1200px)"
-                  srcset="./images/desktop/team2.webp, 1x"
-                  ,
-                  srcset="./images/desktope/team2@2x.webp, 2x"
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width:1200px)"
-                  srcset="./images/desktop/team2.jpg, 1x"
-                  ,
-                  srcset="./images/desktope/team2@2x.jpg, 2x"
-                />
+                <!-- Набір зображень для десктопних екранів -->
 
                 <source
-                  media="(min-width:768px)"
-                  srcset="./images/tablet/team2.webp, 1x"
-                  ,
-                  srcset="./images/tablet/team2@2x.webp, 2x"
-                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/team2.jpg    1x,
+                    ./images/desktop/team2@2x.jpg 2x
+                  "
+                  type="image/jpg"
                 />
-                <source
-                  media="(min-width:768px)"
-                  srcset="./images/tablet/team2.jpg, 1x"
-                  ,
-                  srcset="./images/tablet/team2@2x.jpg, 2x"
-                />
+                <!-- Набір зображень для планшетних екранів -->
 
                 <source
-                  media="(min-width:270px)"
-                  srcset="./images/mobile/team2.webp, 1x"
-                  ,
-                  srcset="./images/mobile/team2@2x.webp, 2x"
-                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team2.jpg    1x,
+                    ./images/tablet/team2@2x.jpg 2x
+                  "
+                  type="image/jpg"
                 />
+                <!-- Набір зображень для мобільних екранів -->
+
                 <source
-                  media="(min-width:270px)"
-                  srcset="./images/mobile/team2.jpg, 1x"
-                  ,
-                  srcset="./images/mobile/team2@2x.jpg, 2x"
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/team2.jpg    1x,
+                    ./images/mobile/team2@2x.jpg 2x
+                  "
+                  type="image/jpg"
                 />
+                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
                 <img src="./images/img-2-2.jpg" alt="фото_сотрудника2" />
               </picture>
               <div class="container-team-names">
@@ -399,47 +372,37 @@
             </li>
             <li class="team-section__item">
               <picture>
-                <source
-                  media="(min-width:1200px)"
-                  srcset="./images/desktop/team3.webp, 1x"
-                  ,
-                  srcset="./images/desktope/team3@2x.webp, 2x"
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width:1200px)"
-                  srcset="./images/desktop/team3.jpg, 1x"
-                  ,
-                  srcset="./images/desktope/team3@2x.jpg, 2x"
-                />
+                <!-- Набір зображень для десктопних екранів -->
 
                 <source
-                  media="(min-width:768px)"
-                  srcset="./images/tablet/team3.webp, 1x"
-                  ,
-                  srcset="./images/tablet/team3@2x.webp, 2x"
-                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/team3.jpg    1x,
+                    ./images/desktop/team3@2x.jpg 2x
+                  "
+                  type="image/jpg"
                 />
-                <source
-                  media="(min-width:768px)"
-                  srcset="./images/tablet/team3.jpg, 1x"
-                  ,
-                  srcset="./images/tablet/team3@2x.jpg, 2x"
-                />
+                <!-- Набір зображень для планшетних екранів -->
 
                 <source
-                  media="(min-width:270px)"
-                  srcset="./images/mobile/team3.webp, 1x"
-                  ,
-                  srcset="./images/mobile/team3@2x.webp, 2x"
-                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team3.jpg    1x,
+                    ./images/tablet/team3@2x.jpg 2x
+                  "
+                  type="image/jpg"
                 />
+                <!-- Набір зображень для мобільних екранів -->
+
                 <source
-                  media="(min-width:270px)"
-                  srcset="./images/mobile/team3.jpg, 1x"
-                  ,
-                  srcset="./images/mobile/team3@2x.jpg, 2x"
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/team3.jpg    1x,
+                    ./images/mobile/team3@2x.jpg 2x
+                  "
+                  type="image/jpg"
                 />
+                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
                 <img src="./images/img-3-2.jpg" alt="фото_сотрудника3" />
               </picture>
               <div class="container-team-names">
@@ -479,47 +442,37 @@
             </li>
             <li class="team-section__item">
               <picture>
-                <source
-                  media="(min-width:1200px)"
-                  srcset="./images/desktop/team4.webp, 1x"
-                  ,
-                  srcset="./images/desktope/team4@2x.webp, 2x"
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width:1200px)"
-                  srcset="./images/desktop/team4.jpg, 1x"
-                  ,
-                  srcset="./images/desktope/team4@2x.jpg, 2x"
-                />
+                <!-- Набір зображень для десктопних екранів -->
 
                 <source
-                  media="(min-width:768px)"
-                  srcset="./images/tablet/team4.webp, 1x"
-                  ,
-                  srcset="./images/tablet/team4@2x.webp, 2x"
-                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/team4.jpg    1x,
+                    ./images/desktop/team4@2x.jpg 2x
+                  "
+                  type="image/jpg"
                 />
-                <source
-                  media="(min-width:768px)"
-                  srcset="./images/tablet/team4.jpg, 1x"
-                  ,
-                  srcset="./images/tablet/team4@2x.jpg, 2x"
-                />
+                <!-- Набір зображень для планшетних екранів -->
 
                 <source
-                  media="(min-width:270px)"
-                  srcset="./images/mobile/team4.webp, 1x"
-                  ,
-                  srcset="./images/mobile/team4@2x.webp, 2x"
-                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team4.jpg    1x,
+                    ./images/tablet/team4@2x.jpg 2x
+                  "
+                  type="image/jpg"
                 />
+                <!-- Набір зображень для мобільних екранів -->
+
                 <source
-                  media="(min-width:270px)"
-                  srcset="./images/mobile/team4.jpg, 1x"
-                  ,
-                  srcset="./images/mobile/team4@2x.jpg, 2x"
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/team4.jpg    1x,
+                    ./images/mobile/team4@2x.jpg 2x
+                  "
+                  type="image/jpg"
                 />
+                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
                 <img src="./images/img-4-2.jpg" alt="фото_сотрудника4" />
               </picture>
               <div class="container-team-names">
@@ -683,8 +636,8 @@
         <div class="subscribe">
           <h3 class="join__title">Подпишитесь на рассылку</h3>
           <form>
-            <label for="mail" class="">
-              <span class="">
+            <label for="mail">
+              <span>
                 <input
                   placeholder="E-mail"
                   class="footer-form-input"
@@ -723,7 +676,7 @@
           <b class="form__title">Оставьте свои данные, мы вам перезвоним</b>
           <div class="form__box">
             <label for="name" class="form__field">
-              <p class="form__text">Имя</p>
+              <b class="form__text">Имя</b>
               <span class="form__container">
                 <input
                   class="form__input"
@@ -742,7 +695,7 @@
             </label>
 
             <label for="tel" class="form__field">
-              <p class="form__text">Телефон</p>
+              <b class="form__text">Телефон</b>
               <span class="form__container">
                 <input
                   class="form__input"
@@ -758,14 +711,14 @@
                 </svg>
               </span>
             </label>
-            <label for="mail" class="form__field">
-              <p class="form__text">Почта</p>
+            <label for="form-mail" class="form__field">
+              <b class="form__text">Почта</b>
               <span class="form__container">
                 <input
                   class="form__input"
                   type="email"
                   name="mail"
-                  id="mail"
+                  id="form-mail"
                   required
                 />
                 <svg class="form__icon" width="18" height="18">
@@ -774,7 +727,7 @@
               </span>
             </label>
             <label for="comment" class="form__field">
-              <p class="form__text">Комментарий</p>
+              <b class="form__text">Комментарий</b>
               <span class="form__container">
                 <textarea
                   name="comment"
