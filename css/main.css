@@ -1345,6 +1345,10 @@ address {
   max-width: 450px;
 }
 
+.advantages__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .advantages__box {
   background-color: var(--advantages-box);
   height: 120px;
