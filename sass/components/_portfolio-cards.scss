@@ -6,13 +6,9 @@
 }
 
 .portfolio__card-elment {
-  margin-right: 30px;
   border: 1px solid #eeeeee;
   cursor: pointer;
-
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
+  margin-bottom: 30px;
 
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -66,13 +62,19 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: -15px;
-    margin-right: -15px;
+    margin: -15px;
   }
 
-  .portfolio__card-elment:not(:last-child) {
-    margin-bottom: 15px;
-    margin-right: 15px;
+  .portfolio__card-elment {
+    width: 354px;
+    height: 404px;
+  }
+  .portfolio__card-elment:nth-child(-n + 2) {
+    width: 354px;
+    height: 440px;
+  }
+  .portfolio__card-elment {
+    margin: 15px;
   }
 }
 
@@ -85,13 +87,9 @@
   }
 
   .portfolio__card-elment {
-    margin-right: 30px;
     border: 1px solid #eeeeee;
     cursor: pointer;
 
-    &:nth-child(-n + 6) {
-      margin-bottom: 30px;
-    }
     &:nth-child(3n) {
       margin-right: 0;
     }

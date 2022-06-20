@@ -25,6 +25,12 @@
     width: 26px;
     height: 16px;
   }
+
+  &:hover &__icon,
+  &:focus &__icon {
+    fill: var(--blue-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .header__main-nav {
@@ -49,6 +55,12 @@
 
   &__link {
     color: var(--primary-text-color);
+
+    &:hover,
+    &:focus {
+      color: var(--blue-color);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 
   &__item {
@@ -70,16 +82,31 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
     padding-bottom: 32px;
+
+    & .phone:hover,
+    & .phone:focus {
+      color: var(--primary-text-color);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 
   &__mail {
-    margin-bottom: 32px;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+
+    & .mail:hover,
+    & .mail:focus {
+      color: var(--primary-text-color);
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__auth-nav {
+    margin-bottom: 64px;
   }
 
   &__network-link {
@@ -126,13 +153,36 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
+  &:hover &__icon,
+  &:focus &__icon {
+    fill: var(--blue-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
   &__icon {
     width: 19px;
     height: 19px;
+    fill: var(--primary-text-color);
+    &:hover,
+    &:focus {
+      fill: var(--blue-color);
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }
+@media screen and (max-width: 467px) {
+  .mobile-menu__phone {
+    font-size: 25px;
+  }
 
+  .mobile-menu__mail {
+    font-size: 20px;
+  }
+
+  .mobile-menu__network-link {
+    font-size: 12px;
+  }
+}
 // 768+
 @media screen and (min-width: 768px) {
   .site-nav {
