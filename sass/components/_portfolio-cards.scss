@@ -89,6 +89,11 @@
   .portfolio__card-elment {
     border: 1px solid #eeeeee;
     cursor: pointer;
+    margin-right: 30px;
+
+    &:nth-child(-n + 6) {
+      margin-bottom: 30px;
+    }
 
     &:nth-child(3n) {
       margin-right: 0;
