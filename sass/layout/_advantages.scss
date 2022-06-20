@@ -11,7 +11,7 @@
   }
 
   &__box {
-    background-color: #f5f4fa;
+    background-color: var(--advantages-box);
     height: 120px;
     margin-bottom: 30px;
     display: flex;
@@ -75,7 +75,7 @@
     }
 
     &__box {
-      background-color: #f5f4fa;
+      background-color: var(--advantages-box);
       height: 120px;
       margin-bottom: 30px;
       display: flex;

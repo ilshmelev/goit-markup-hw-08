@@ -10,7 +10,7 @@
     url(../images/mobile/bg-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #2f303a;
+  background-color: var(--footer-form-inpu);
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 118px;
@@ -20,7 +20,7 @@
   margin-right: auto;
 
   &__title {
-    color: #ffffff;
+    color: var(--white-color);
     font-style: normal;
     font-weight: 900;
     font-size: 26px;

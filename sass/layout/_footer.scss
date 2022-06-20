@@ -3,7 +3,7 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #2f303a;
+  background-color: var(--footer-form-input);
 
   &__address {
     font-weight: 400;

@@ -1,6 +1,6 @@
 /* хедер */
 .header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--header-border);
 }
 @media screen and (min-whidth: 768px) {
   .header {

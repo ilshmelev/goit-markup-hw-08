@@ -99,7 +99,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+    color: rgba(117, 117, 117, 0.502);
   }
 
   &__container > textarea {
@@ -160,7 +160,7 @@
     content: "";
     width: 16px;
     height: 15px;
-    border: 2px solid #212121;
+    border: 2px solid var(--primary-text-color);
     cursor: pointer;
     border-radius: 2px;
     margin-right: 8px;
