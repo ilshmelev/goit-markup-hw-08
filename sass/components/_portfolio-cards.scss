@@ -67,14 +67,17 @@
 
   .portfolio__card-elment {
     width: 354px;
-    height: 404px;
-  }
-  .portfolio__card-elment:nth-child(-n + 2) {
-    width: 354px;
-    height: 440px;
-  }
-  .portfolio__card-elment {
     margin: 15px;
+  }
+
+  .portfolio__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .portfolio__card-text {
+    flex-grow: 1;
   }
 }
 
