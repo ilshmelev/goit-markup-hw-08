@@ -307,7 +307,7 @@ address {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 230px) and (max-width: 1199px) {
   .footer-form-input {
     margin-bottom: 20px;
   }
@@ -315,7 +315,7 @@ address {
 
 @media screen and (min-width: 1200px) {
   .subscribe {
-    margin-left: 92px;
+    margin-left: auto;
   }
   .footer-form-input {
     width: 358px;
@@ -1343,10 +1343,6 @@ address {
 
 .advantages__item {
   max-width: 450px;
-}
-
-.advantages__item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 .advantages__box {
